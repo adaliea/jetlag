@@ -1,0 +1,327 @@
+{
+  "source": "https://catabus.com/wp-content/uploads/google_transit.zip",
+  "feed": {
+    "feed_publisher_name": "Statecollege-pa-cata",
+    "feed_publisher_url": "http://www.catabus.com",
+    "feed_lang": "en",
+    "feed_start_date": "20260817",
+    "feed_end_date": "20261213",
+    "feed_version": "20260810",
+    "feed_contact_email": "myang@catabus.com",
+    "feed_contact_url": ""
+  },
+  "timezone": "America/New_York",
+  "window": {
+    "start": "10:00:00",
+    "end": "18:00:00"
+  },
+  "note": "Raw boarding stops with at least one scheduled departure in the window. Opposite-direction stops are separate. These are not approved hiding centers or evidence of adequate all-day service or pedestrian access.",
+  "days": [
+    {
+      "date": "2026-09-19",
+      "weekday": "Saturday",
+      "raw_stop_count": 245,
+      "routes": [
+        {
+          "id": "71",
+          "name": "AC",
+          "description": "Atherton Street Connector",
+          "stop_count": 61
+        },
+        {
+          "id": "955",
+          "name": "BL Gameday",
+          "description": "Blue Loop (Gameday Detour)",
+          "stop_count": 14
+        },
+        {
+          "id": "70",
+          "name": "CC",
+          "description": "College Avenue Connector",
+          "stop_count": 35
+        },
+        {
+          "id": "972",
+          "name": "H Gameday",
+          "description": "Toftrees (Gameday Detour)",
+          "stop_count": 42
+        },
+        {
+          "id": "22",
+          "name": "N",
+          "description": "Martin St/Aaron Dr",
+          "stop_count": 47
+        },
+        {
+          "id": "31",
+          "name": "R",
+          "description": "Waupelani Dr",
+          "stop_count": 40
+        },
+        {
+          "id": "997",
+          "name": "SA",
+          "description": "South Atherton Shuttle",
+          "stop_count": 25
+        },
+        {
+          "id": "43",
+          "name": "V",
+          "description": "Vairo Boulevard",
+          "stop_count": 46
+        },
+        {
+          "id": "46",
+          "name": "W",
+          "description": "Havershire/Farmstead",
+          "stop_count": 26
+        },
+        {
+          "id": "957",
+          "name": "WL Gameday",
+          "description": "White Loop (Gameday Detour)",
+          "stop_count": 13
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "weekday": "Sunday",
+      "raw_stop_count": 131,
+      "routes": [
+        {
+          "id": "55",
+          "name": "BL",
+          "description": "Blue Loop",
+          "stop_count": 15
+        },
+        {
+          "id": "70",
+          "name": "CC",
+          "description": "College Avenue Connector",
+          "stop_count": 35
+        },
+        {
+          "id": "25",
+          "name": "NV",
+          "description": "NV",
+          "stop_count": 50
+        },
+        {
+          "id": "34",
+          "name": "RP",
+          "description": "RP",
+          "stop_count": 32
+        },
+        {
+          "id": "57",
+          "name": "WL",
+          "description": "White Loop",
+          "stop_count": 13
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "weekday": "Saturday",
+      "raw_stop_count": 245,
+      "routes": [
+        {
+          "id": "71",
+          "name": "AC",
+          "description": "Atherton Street Connector",
+          "stop_count": 61
+        },
+        {
+          "id": "955",
+          "name": "BL Gameday",
+          "description": "Blue Loop (Gameday Detour)",
+          "stop_count": 14
+        },
+        {
+          "id": "70",
+          "name": "CC",
+          "description": "College Avenue Connector",
+          "stop_count": 35
+        },
+        {
+          "id": "972",
+          "name": "H Gameday",
+          "description": "Toftrees (Gameday Detour)",
+          "stop_count": 42
+        },
+        {
+          "id": "22",
+          "name": "N",
+          "description": "Martin St/Aaron Dr",
+          "stop_count": 47
+        },
+        {
+          "id": "31",
+          "name": "R",
+          "description": "Waupelani Dr",
+          "stop_count": 40
+        },
+        {
+          "id": "997",
+          "name": "SA",
+          "description": "South Atherton Shuttle",
+          "stop_count": 25
+        },
+        {
+          "id": "43",
+          "name": "V",
+          "description": "Vairo Boulevard",
+          "stop_count": 46
+        },
+        {
+          "id": "46",
+          "name": "W",
+          "description": "Havershire/Farmstead",
+          "stop_count": 26
+        },
+        {
+          "id": "957",
+          "name": "WL Gameday",
+          "description": "White Loop (Gameday Detour)",
+          "stop_count": 13
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "weekday": "Sunday",
+      "raw_stop_count": 131,
+      "routes": [
+        {
+          "id": "55",
+          "name": "BL",
+          "description": "Blue Loop",
+          "stop_count": 15
+        },
+        {
+          "id": "70",
+          "name": "CC",
+          "description": "College Avenue Connector",
+          "stop_count": 35
+        },
+        {
+          "id": "25",
+          "name": "NV",
+          "description": "NV",
+          "stop_count": 50
+        },
+        {
+          "id": "34",
+          "name": "RP",
+          "description": "RP",
+          "stop_count": 32
+        },
+        {
+          "id": "57",
+          "name": "WL",
+          "description": "White Loop",
+          "stop_count": 13
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "weekday": "Saturday",
+      "raw_stop_count": 241,
+      "routes": [
+        {
+          "id": "71",
+          "name": "AC",
+          "description": "Atherton Street Connector",
+          "stop_count": 61
+        },
+        {
+          "id": "55",
+          "name": "BL",
+          "description": "Blue Loop",
+          "stop_count": 15
+        },
+        {
+          "id": "70",
+          "name": "CC",
+          "description": "College Avenue Connector",
+          "stop_count": 35
+        },
+        {
+          "id": "72",
+          "name": "H",
+          "description": "Toftrees",
+          "stop_count": 54
+        },
+        {
+          "id": "22",
+          "name": "N",
+          "description": "Martin St/Aaron Dr",
+          "stop_count": 47
+        },
+        {
+          "id": "31",
+          "name": "R",
+          "description": "Waupelani Dr",
+          "stop_count": 40
+        },
+        {
+          "id": "43",
+          "name": "V",
+          "description": "Vairo Boulevard",
+          "stop_count": 46
+        },
+        {
+          "id": "46",
+          "name": "W",
+          "description": "Havershire/Farmstead",
+          "stop_count": 26
+        },
+        {
+          "id": "57",
+          "name": "WL",
+          "description": "White Loop",
+          "stop_count": 13
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "weekday": "Sunday",
+      "raw_stop_count": 131,
+      "routes": [
+        {
+          "id": "55",
+          "name": "BL",
+          "description": "Blue Loop",
+          "stop_count": 15
+        },
+        {
+          "id": "70",
+          "name": "CC",
+          "description": "College Avenue Connector",
+          "stop_count": 35
+        },
+        {
+          "id": "25",
+          "name": "NV",
+          "description": "NV",
+          "stop_count": 50
+        },
+        {
+          "id": "34",
+          "name": "RP",
+          "description": "RP",
+          "stop_count": 32
+        },
+        {
+          "id": "57",
+          "name": "WL",
+          "description": "White Loop",
+          "stop_count": 13
+        }
+      ]
+    }
+  ]
+}

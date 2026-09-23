@@ -1,0 +1,152 @@
+day,reference_date,stop_id,stop,municipality,eligible_center,available_boarding_in_game,exclusion_reasons,scheduled_routes,departures,first_departure,last_departure,max_gap_minutes,latitude,longitude
+saturday,2026-10-03,16,1003 W Aaron Dr near SC Collective,Ferguson township,True,True,,N,15,10:01,17:29,33,40.802631,-77.898163
+saturday,2026-10-03,372,1006 S Pugh St,State College borough,True,True,,AC,16,10:04,17:34,30,40.788983,-77.849408
+saturday,2026-10-03,371,1015 S Pugh St,State College borough,True,True,,AC,16,10:22,17:52,30,40.78894,-77.8492
+saturday,2026-10-03,39,1100 W Aaron Dr at SC Collective,Ferguson township,True,True,,N,15,10:28,17:55,33,40.80188,-77.898979
+saturday,2026-10-03,375,1218 S Allen St,State College borough,True,True,,AC,16,10:06,17:36,30,40.7855,-77.8488
+saturday,2026-10-03,46,1224 N Atherton St - Discovery Space,Ferguson township,True,True,,"AC, N, V, W",53,10:02,17:48,29,40.802467,-77.882167
+saturday,2026-10-03,379,1306 S Atherton St,State College borough,True,True,,AC,16,10:07,17:37,30,40.78435,-77.84432
+saturday,2026-10-03,479,1400 Martin St at Parkcrest Terrace,Ferguson township,True,True,,N,15,10:30,17:57,33,40.802948,-77.888809
+saturday,2026-10-03,523,1450 N Atherton St at Hoss,Ferguson township,True,True,,"AC, V",31,10:03,17:46,30,40.806141,-77.889069
+saturday,2026-10-03,482,1471 Martin St at Weis,Ferguson township,True,True,,N,15,10:31,17:59,33,40.8042176664,-77.8906452712
+saturday,2026-10-03,484,1521 Martin St at Northland Bowl,Ferguson township,True,True,,N,15,10:31,17:59,33,40.8052065749,-77.8921375423
+saturday,2026-10-03,498,1870 North Atherton Street,Patton township,True,True,,"AC, H, N",43,10:02,17:51,30,40.8089272498,-77.9040936651
+saturday,2026-10-03,364,240 S Pugh St (oLiv Highland),State College borough,True,True,,AC,16,10:02,17:32,30,40.79357,-77.85781
+saturday,2026-10-03,715,545 Oakwood Ave at SC Collective Oakwood,Patton township,True,True,,V,15,10:24,17:52,35,40.81736,-77.88919
+saturday,2026-10-03,502,658 Oakwood Ave,Patton township,True,True,,V,15,10:09,17:38,35,40.81908,-77.88955
+saturday,2026-10-03,412,712 Southgate Dr,State College borough,True,True,,R,15,10:02,17:51,42,40.775255,-77.858415
+saturday,2026-10-03,40,720 W Aaron Dr at Aaron Village,Ferguson township,True,True,,N,15,10:28,17:55,33,40.804222,-77.895844
+saturday,2026-10-03,15,801 W Aaron Dr at Park Forest Apartments,Ferguson township,True,True,,N,15,10:00,17:28,33,40.804315,-77.895921
+saturday,2026-10-03,399,805 S Atherton St,State College borough,True,True,,R,15,10:09,17:58,42,40.78604,-77.855255
+saturday,2026-10-03,370,909 S Pugh St,State College borough,True,True,,AC,16,10:23,17:53,30,40.79,-77.85039
+saturday,2026-10-03,709,972 Oakwood Ave,Patton township,True,True,,V,15,10:10,17:39,35,40.818123,-77.896378
+saturday,2026-10-03,280,Athletic Administration Building,College township,True,True,,H,12,10:21,17:41,40,40.81384,-77.85526
+saturday,2026-10-03,361,Beaver Ave at Schlow Library/CATA Office,State College borough,True,True,,"AC, CC, WL",99,10:01,17:52,12,40.793662,-77.859912
+saturday,2026-10-03,53,Bigler Rd at Computer Building,State College borough,True,True,,"H, N, R, V, W",60,10:11,17:58,25,40.803905,-77.860947
+saturday,2026-10-03,159,Bigler Rd at Nittany Community Center,State College borough,True,True,,BL,22,10:04,17:49,30,40.80259,-77.85712
+saturday,2026-10-03,422,Blue Course Dr at Chase Bank,Ferguson township,True,True,,"N, W",24,10:16,17:56,32,40.803059,-77.884857
+saturday,2026-10-03,358,Burrowes Rd at Rec Hall,State College borough,True,True,,"AC, WL",68,10:05,17:57,18,40.79596,-77.8683
+saturday,2026-10-03,359,Burrowes Road at Westgate Building,State College borough,True,True,,"AC, WL",68,10:06,17:58,18,40.79422,-77.86604
+saturday,2026-10-03,252,Colonnade Blvd Opposite Kohls,Patton township,True,True,,"H, V",27,10:17,17:48,32,40.814682,-77.902018
+saturday,2026-10-03,475,Colonnade Blvd at Chicos,Patton township,True,True,,"AC, N",31,10:07,17:37,30,40.810512,-77.906824
+saturday,2026-10-03,249,Colonnade Blvd at Home Goods,Patton township,True,True,,"H, N, V",42,10:10,17:47,23,40.8116210301,-77.9053267755
+saturday,2026-10-03,761,Colonnade Blvd at Kohls,Patton township,True,True,,"H, V",26,10:12,17:58,32,40.814663,-77.902489
+saturday,2026-10-03,250,Colonnade Blvd at Target,Patton township,True,True,,"H, N, V",42,10:14,17:59,26,40.811734,-77.905593
+saturday,2026-10-03,476,Colonnade Blvd at Wegmans,Patton township,True,True,,"AC, H, N",42,10:00,17:55,28,40.810703,-77.906905
+saturday,2026-10-03,287,Curtin Rd at Bryce Jordan Center,College township,True,True,,"BL, H",33,10:20,17:54,30,40.81014,-77.85581
+saturday,2026-10-03,148,Curtin Rd at McCoy Natatorium,State College borough,True,True,,"BL, H",31,10:17,17:52,30,40.80519,-77.86056
+saturday,2026-10-03,51,Curtin Rd at Pavilion Theatre,State College borough,True,True,,"BL, H, N, R, V, W",80,10:09,17:54,23,40.80088,-77.86465
+saturday,2026-10-03,149,Curtin Rd at Shields Building,College township,True,True,,"BL, H",33,10:18,17:54,30,40.80713,-77.85871
+saturday,2026-10-03,355,Curtin Rd at Stadium West Parking Lot,College township,True,True,,H,12,10:34,17:54,40,40.81015,-77.85595
+saturday,2026-10-03,356,Curtin Rd at Visual Arts Building,State College borough,True,True,,WL,56,10:02,17:54,24,40.80094,-77.86477
+saturday,2026-10-03,154,Curtin Rd at the Intramural Building,College township,True,True,,"H, WL",67,10:00,17:56,24,40.807,-77.859
+saturday,2026-10-03,565,E Beaver Ave at Beaver Hill Apts,State College borough,True,True,,"CC, WL",71,10:14,17:53,14,40.796288,-77.856394
+saturday,2026-10-03,564,E Beaver Ave at Calder Commons,State College borough,True,True,,"CC, WL",74,10:14,17:54,14,40.79886,-77.85297
+saturday,2026-10-03,52,E College Ave at Atherton Hall,State College borough,True,True,,"BL, CC, H, N, R, V, W",95,10:00,17:52,20,40.797195,-77.858063
+saturday,2026-10-03,171,E College Ave at Hampton Inn,College township,True,True,,CC,17,10:23,17:35,27,40.80626,-77.84061
+saturday,2026-10-03,1,E. College Ave at S. Allen Street,State College borough,True,True,,"AC, BL, CC, H, N, R, V, W",119,10:00,17:59,17,40.794559,-77.861549
+saturday,2026-10-03,155,East Halls at Curtin Hall,State College borough,True,True,,"H, WL",67,10:01,17:57,24,40.80513,-77.86076
+saturday,2026-10-03,373,Easterly Pkwy at Old Boalsburg Rd,State College borough,True,True,,AC,16,10:05,17:35,30,40.78815,-77.8494
+saturday,2026-10-03,283,Hastings Rd at Forest Research Lab,State College borough,True,True,,BL,22,10:02,17:47,30,40.80509,-77.85108
+saturday,2026-10-03,282,Hastings Rd at Lot 43 East,College township,True,True,,BL,22,10:01,17:46,30,40.80769,-77.8486
+saturday,2026-10-03,5,Hastings Rd at University Drive,State College borough,True,True,,BL,22,10:03,17:48,30,40.804695,-77.85278
+saturday,2026-10-03,477,Martin St at Park Crest Lane Inbound,Ferguson township,True,True,,N,15,10:31,17:58,33,40.801872,-77.887276
+saturday,2026-10-03,478,Martin St at Park Crest Lane Outbound,Ferguson township,True,True,,N,15,10:30,17:58,33,40.8019770639,-77.8871271638
+saturday,2026-10-03,481,Martin Street at Herman Drive,Ferguson township,True,True,,N,15,10:30,17:57,33,40.8044836032,-77.8913654038
+saturday,2026-10-03,518,Middle of Oakwood Ave Inbound,Patton township,True,True,,V,15,10:23,17:51,35,40.818726,-77.893219
+saturday,2026-10-03,501,Middle of Oakwood Ave Outbound,Patton township,True,True,,V,15,10:09,17:38,35,40.81886,-77.89325
+saturday,2026-10-03,522,N Atheron at Champs,Ferguson township,True,True,,"AC, V",30,10:07,17:37,30,40.807671,-77.892625
+saturday,2026-10-03,521,N Atherton Pl at McDonalds,Patton township,True,True,,"AC, V",30,10:01,17:39,30,40.808894,-77.896201
+saturday,2026-10-03,520,N Atherton Pl at Walmart,Patton township,True,True,,"AC, V",31,10:00,17:43,30,40.809042,-77.896356
+saturday,2026-10-03,420,N Atherton St at Arbor Way,State College borough,True,True,,"AC, N, V, W",55,10:04,17:51,29,40.79812,-77.87484
+saturday,2026-10-03,499,N Atherton St at Chick-Fil-A,Patton township,True,True,,"H, N",27,10:01,17:51,32,40.809163,-77.906342
+saturday,2026-10-03,500,N Atherton St at Colonnade Blvd,Patton township,True,True,,N,15,10:09,17:37,33,40.809495,-77.907497
+saturday,2026-10-03,524,N Atherton St at Denton Ave,Ferguson township,True,True,,"AC, V",30,10:06,17:36,30,40.806147,-77.888714
+saturday,2026-10-03,527,N Atherton St at E Clinton Ave,Ferguson township,True,True,,"AC, V",31,10:05,17:58,30,40.803445,-77.883648
+saturday,2026-10-03,473,N Atherton St at Fairwood Lane,Patton township,True,True,,AC,16,10:06,17:36,30,40.809765,-77.91147
+saturday,2026-10-03,472,N Atherton St at Hawbaker Industrial Dr,Patton township,True,True,,AC,16,10:27,17:57,30,40.81029,-77.913947
+saturday,2026-10-03,7,N Atherton St at Hillcrest Ave,State College borough,True,True,,"AC, N, V, W",54,10:03,17:56,30,40.798056,-77.874489
+saturday,2026-10-03,47,N Atherton St at Mitchell Ave Inbound,State College borough,True,True,,"AC, N, V, W",55,10:03,17:50,29,40.80027,-77.87804
+saturday,2026-10-03,525,N Atherton St at N Hills Place Inbound,Ferguson township,True,True,,"AC, V",31,10:04,17:47,30,40.805255,-77.88742
+saturday,2026-10-03,526,N Atherton St at N Hills Place Outbound,Ferguson township,True,True,,"AC, V",30,10:06,17:59,30,40.805164,-77.886925
+saturday,2026-10-03,474,N Atherton St near Fairfield Inn,Patton township,True,True,,AC,16,10:26,17:56,30,40.809807,-77.910067
+saturday,2026-10-03,705,N Atherton St near Staples,Ferguson township,True,True,,"AC, V",31,10:02,17:45,30,40.807647,-77.893663
+saturday,2026-10-03,8,N. Atherton St at CVS,Ferguson township,True,True,,"AC, N, V, W",54,10:04,17:58,29,40.801405,-77.879826
+saturday,2026-10-03,424,Northland Center Inbound,Ferguson township,True,True,,"N, W",26,10:00,17:59,32,40.802559,-77.885834
+saturday,2026-10-03,423,Northland Center Outbound,Ferguson township,True,True,,"N, W",24,10:17,17:57,32,40.802559,-77.885963
+saturday,2026-10-03,519,Oakwood Ave at Benjamin Ct,Patton township,True,True,,V,15,10:24,17:52,35,40.818935,-77.889603
+saturday,2026-10-03,517,Oakwood Ave at Texas Roadhouse,Patton township,True,True,,V,15,10:22,17:50,35,40.816196,-77.896767
+saturday,2026-10-03,714,Oakwood Ave at Vairo Village Comm Ctr,Patton township,True,True,,V,15,10:08,17:37,35,40.81745,-77.889
+saturday,2026-10-03,160,Opposite 1031 E College Ave,College township,True,True,,CC,18,10:16,17:55,27,40.80607,-77.84031
+saturday,2026-10-03,480,Opposite 1400 Martin St,Ferguson township,True,True,,N,15,10:30,17:58,33,40.803079,-77.888692
+saturday,2026-10-03,363,Opposite 240 S Pugh St,State College borough,True,True,,AC,16,10:26,17:56,30,40.793773,-77.858053
+saturday,2026-10-03,710,Opposite 972 Oakwood Ave,Patton township,True,True,,V,15,10:22,17:50,35,40.818066,-77.89621
+saturday,2026-10-03,494,Park Forest Ave Opposite Northbrook,Patton township,True,True,,N,15,10:25,17:52,33,40.807541,-77.903569
+saturday,2026-10-03,496,Park Forest Ave at N Atherton Inbound,Patton township,True,True,,N,15,10:24,17:51,33,40.808502,-77.902283
+saturday,2026-10-03,495,Park Forest Ave at N Atherton Outbound,Patton township,True,True,,N,15,10:05,17:33,33,40.808365,-77.902205
+saturday,2026-10-03,493,Park Forest Ave at Northbrook Greens,Patton township,True,True,,N,15,10:04,17:32,33,40.807479,-77.903377
+saturday,2026-10-03,485,Park Lane at Aaron Dr,Ferguson township,True,True,,N,15,10:27,17:54,33,40.80125,-77.90033
+saturday,2026-10-03,487,Park Lane at Cornwall Rd Inbound,Patton township,True,True,,N,15,10:27,17:54,33,40.80256,-77.90159
+saturday,2026-10-03,488,Park Lane at Cornwall Rd Outbound,Ferguson township,True,True,,N,15,10:02,17:30,33,40.80251,-77.90135
+saturday,2026-10-03,486,Park Lane at Devonshire Dr,Ferguson township,True,True,,N,15,10:02,17:30,33,40.801315,-77.90023
+saturday,2026-10-03,491,Park Lane at Park Forest Ave Inbound,Patton township,True,True,,N,15,10:26,17:53,33,40.806595,-77.90534
+saturday,2026-10-03,492,Park Lane at Park Forest Ave Outbound,Patton township,True,True,,N,15,10:03,17:31,33,40.806629,-77.90522
+saturday,2026-10-03,490,Park Lane at Shannon Lane,Patton township,True,True,,N,15,10:03,17:31,33,40.804783,-77.904411
+saturday,2026-10-03,489,Park Lane at Sierra Lane,Patton township,True,True,,N,15,10:26,17:53,33,40.804787,-77.904572
+saturday,2026-10-03,4,Pattee Transit Center Eastbound,State College borough,True,True,,"BL, H, N, R, V, W",80,10:07,17:52,23,40.797836,-77.866722
+saturday,2026-10-03,357,Pattee Transit Center Westbound,State College borough,True,True,,WL,56,10:04,17:56,24,40.79739,-77.86752
+saturday,2026-10-03,55,Pollock Rd at Millennium Science Cplx,State College borough,True,True,,"BL, H, N, R, V, W",77,10:00,17:58,21,40.80127,-77.85906
+saturday,2026-10-03,279,Porter Rd at Beaver Stadium East,College township,True,True,,H,12,10:33,17:53,40,40.8136,-77.85516
+saturday,2026-10-03,281,Porter Rd at Jordan East Parking,College township,True,True,,BL,22,10:00,17:45,30,40.8111015565,-77.8527997319
+saturday,2026-10-03,401,S Atherton St at Centre Lane,State College borough,True,True,,R,15,10:07,17:56,42,40.78499,-77.84956
+saturday,2026-10-03,396,S Atherton St at Fairmount Ave Outbound,State College borough,True,True,,R,14,10:31,17:49,43,40.78816,-77.86038
+saturday,2026-10-03,380,S Atherton St at Norma Street,State College borough,True,True,,AC,16,10:08,17:38,30,40.78465,-77.84162
+saturday,2026-10-03,394,S Atherton St at W Beaver Ave Outbound,State College borough,True,True,,R,14,10:30,17:48,43,40.79109,-77.8642
+saturday,2026-10-03,397,S Atherton St at W Fairmount Ave Inbound,State College borough,True,True,,R,15,10:10,17:59,42,40.788115,-77.860035
+saturday,2026-10-03,381,S Atherton St at Whitehall Rd,State College borough,True,True,,AC,16,10:20,17:50,30,40.7847898765,-77.8417207424
+saturday,2026-10-03,377,S Atherton St near Unimart,State College borough,True,True,,AC,16,10:07,17:37,30,40.78438,-77.84715
+saturday,2026-10-03,395,S Atherton Street at Highland Alley,State College borough,True,True,,R,14,10:11,17:29,42,40.790469,-77.863144
+saturday,2026-10-03,374,S Atherton near S Allen Street,State College borough,True,True,,R,15,10:02,17:52,43,40.784737,-77.849043
+saturday,2026-10-03,360,S Burrowes St at the James Elliott Bldg,State College borough,True,True,,"AC, WL",71,10:08,17:55,17,40.792136,-77.863248
+saturday,2026-10-03,378,S Pugh St at Bradley Ave,State College borough,True,True,,AC,16,10:21,17:51,30,40.78502,-77.84488
+saturday,2026-10-03,376,S Pugh St at E Ellen Ave,State College borough,True,True,,AC,16,10:21,17:51,30,40.78735,-77.84747
+saturday,2026-10-03,366,S Pugh St at E Fairmount Ave,State College borough,True,True,,AC,16,10:25,17:55,30,40.79257,-77.85565
+saturday,2026-10-03,367,S Pugh St at E Hamilton Ave Inbound,State College borough,True,True,,AC,16,10:24,17:54,30,40.79136,-77.85323
+saturday,2026-10-03,368,S Pugh St at E Hamilton Ave Outbound,State College borough,True,True,,AC,16,10:03,17:33,30,40.79128,-77.85326
+saturday,2026-10-03,365,S Pugh St at E Nittany Ave,State College borough,True,True,,AC,16,10:02,17:32,30,40.79268,-77.85609
+saturday,2026-10-03,369,S Pugh St at Waring Ave,State College borough,True,True,,AC,16,10:04,17:34,30,40.79009,-77.85077
+saturday,2026-10-03,398,S. Atherton St. near Parkway Plaza Apts,State College borough,True,True,,R,15,10:00,17:50,43,40.78592,-77.85542
+saturday,2026-10-03,54,Shortlidge Rd at White Building,State College borough,True,True,,"BL, H, N, R, V, W",79,10:02,17:51,21,40.79905,-77.858991
+saturday,2026-10-03,413,Southgate Dr at Highlandon Ct,State College borough,True,True,,R,15,10:01,17:50,42,40.774545,-77.860625
+saturday,2026-10-03,418,Stratford Dr at Waupelani Dr,State College borough,True,True,,R,15,10:06,17:57,43,40.77425,-77.85708
+saturday,2026-10-03,497,Trader Joes Plaza,Patton township,True,True,,"AC, H, N",54,10:04,17:53,28,40.809584,-77.902198
+saturday,2026-10-03,153,University Dr at Jordan Center Gate D,College township,True,True,,WL,56,10:23,17:59,23,40.80741,-77.85592
+saturday,2026-10-03,152,University Dr at Lot 83 West,State College borough,True,True,,WL,56,10:21,17:57,21,40.80462,-77.85201
+saturday,2026-10-03,563,University Drive ramp at The Meridian,State College borough,True,True,,WL,56,10:19,17:55,19,40.80123,-77.85152
+saturday,2026-10-03,513,Vairo Blvd at The Bryn Inbound,Patton township,True,True,,V,15,10:30,17:58,35,40.80993,-77.89189
+saturday,2026-10-03,511,Vairo Blvd at The Pointe Inbound,Ferguson township,True,True,,V,15,10:29,17:57,35,40.810268,-77.890236
+saturday,2026-10-03,512,Vairo Blvd at The Pointe Outbound,Ferguson township,True,True,,V,15,10:03,17:32,35,40.810001,-77.890587
+saturday,2026-10-03,508,Vairo Blvd at Tremont Inbound lower,Patton township,True,True,,V,15,10:26,17:54,35,40.815521,-77.884628
+saturday,2026-10-03,509,Vairo Blvd at Tremont Inbound upper,Ferguson township,True,True,,V,15,10:28,17:56,35,40.81246,-77.88627
+saturday,2026-10-03,510,Vairo Blvd at Tremont Outbound,Ferguson township,True,True,,V,15,10:04,17:33,35,40.81222,-77.88628
+saturday,2026-10-03,503,Vairo Blvd at Vairo Village (Upper),Patton township,True,True,,V,15,10:07,17:36,35,40.816269,-77.887268
+saturday,2026-10-03,507,Vairo Blvd at Vairo Village(lower),Patton township,True,True,,V,15,10:06,17:35,35,40.81544,-77.88426
+saturday,2026-10-03,504,Vairo Blvd opposite Vairo Village(Upper),Patton township,True,True,,V,15,10:25,17:53,35,40.81627,-77.88796
+saturday,2026-10-03,506,Vairo Blvd opposite Vairo Village(lower),Patton township,True,True,,V,15,10:26,17:54,35,40.81588,-77.88646
+saturday,2026-10-03,246,W Beaver Ave at S Barnard St,State College borough,True,True,,CC,18,10:05,17:44,27,40.78967,-77.86525
+saturday,2026-10-03,289,W Beaver Ave at S Sparks St,State College borough,True,True,,CC,18,10:04,17:43,27,40.78802,-77.86745
+saturday,2026-10-03,247,W College Ave at N Barnard St,State College borough,True,True,,CC,18,10:02,17:41,27,40.79103,-77.86617
+saturday,2026-10-03,288,W College Ave at N Sparks St,State College borough,True,True,,CC,18,10:03,17:42,27,40.78862,-77.86939
+saturday,2026-10-03,285,Walker Building,State College borough,True,True,,"AC, BL, H, N, R, V, W",94,10:00,17:59,16,40.79267,-77.86681
+saturday,2026-10-03,403,Waupelani Dr at Brexx,State College borough,True,True,,R,15,10:05,17:54,42,40.782015,-77.850237
+saturday,2026-10-03,406,Waupelani Dr at Executive House,State College borough,True,True,,R,15,10:04,17:54,43,40.7796,-77.85425
+saturday,2026-10-03,409,Waupelani Dr at Hearthside,State College borough,True,True,,R,15,10:03,17:52,42,40.777605,-77.854585
+saturday,2026-10-03,407,Waupelani Dr at Lions Gate Apts,State College borough,True,True,,R,15,10:04,17:53,42,40.77982,-77.85395
+saturday,2026-10-03,408,Waupelani Dr at Nittany Gardens Apts,State College borough,True,True,,R,15,10:05,17:55,43,40.77789,-77.85471
+saturday,2026-10-03,402,Waupelani Dr at S Allen St,State College borough,True,True,,R,15,10:06,17:55,42,40.78383,-77.848515
+saturday,2026-10-03,410,Waupelani Dr at Southgate Dr Inbound,State College borough,True,True,,R,15,10:03,17:52,42,40.775585,-77.856265
+saturday,2026-10-03,411,Waupelani Dr at Southgate Dr Outbound,State College borough,True,True,,R,15,10:06,17:56,43,40.77533,-77.85663
+saturday,2026-10-03,64,Waupelani Dr at Waupelani Lofts,State College borough,True,True,,R,15,10:03,17:53,43,40.782265,-77.850159
+saturday,2026-10-03,38,Waupelani Dr opposite Jaru Copy,State College borough,True,True,,R,15,10:02,17:52,43,40.783595,-77.848728
+saturday,2026-10-03,329,Waupelani Drive at OBryan Lane,State College borough,True,True,,R,15,10:04,17:54,43,40.780695,-77.853079
+saturday,2026-10-03,516,Williamsburg Sq. - Holiday Inn/Spring Hi,Patton township,True,True,,V,15,10:11,17:40,35,40.816315,-77.896873

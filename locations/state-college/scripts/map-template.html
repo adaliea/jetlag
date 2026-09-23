@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#172331">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Jet Lag LA">
+  <meta name="apple-mobile-web-app-title" content="Jet Lag State College">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicon.svg">
-  <title>Jet Lag: Hide + Seek Los Angeles</title>
+  <title>Jet Lag: Hide + Seek State College</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
     * { box-sizing: border-box; }
@@ -39,6 +39,8 @@
     #locationButton { right: 14px; bottom: 28px; }
     #menuButton { display: none; top: 14px; right: 14px; }
     #closeMenu { display: none; position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; padding: 0; font-size: 28px; line-height: 1; }
+    details { margin: 12px 0; font-size: 13px; line-height: 1.5; }
+    summary { cursor: pointer; color: #ffd27a; }
     label { display: block; margin: 8px 0; font-size: 13px; }
     input { vertical-align: middle; }
     #search { width: 100%; padding: 9px; border: 0; border-radius: 5px; font-size: 16px; }
@@ -58,6 +60,12 @@
     .rules-body h3 { margin: 20px 0 5px; font-size: 15px; }
     .rules-body p, .rules-body li { font-size: 14px; }
     .rules-body .official { display: inline-block; margin: 12px 0 4px; padding: 10px 12px; border-radius: 5px; background: #1261a0; color: white; text-decoration: none; }
+    select { width: 100%; padding: 10px; font: inherit; border-radius: 5px; }
+    .draft { padding: 10px; border: 1px solid #e9b44c; border-radius: 5px; }
+    .rules-body a { color: #1261a0; }
+    .rules-body table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .rules-body td, .rules-body th { border: 1px solid #ccc; padding: 6px; text-align: left; }
+    .table-wrap { overflow-x: auto; }
     .location-dot { width: 18px; height: 18px; border: 3px solid white; border-radius: 50%; background: #1677ff; box-shadow: 0 0 0 2px #1677ff55; }
     @media (max-width: 720px) {
       #map {
@@ -99,25 +107,41 @@
 <body>
   <aside>
     <button id="closeMenu" type="button" aria-label="Close menu">&times;</button>
-    <h1>Hide + Seek<br>Los Angeles</h1>
+    <h1>Hide + Seek<br>State College</h1>
+    <p><a href="/">All locations</a> · <a href="/la/">Los Angeles map</a></p>
     <div><span class="stat" id="count"></span><span class="stat">Small game</span><span class="stat">400 m zones</span></div>
     <div class="actions">
-      <button id="rulesButton" type="button">LA special rules</button>
+      <button id="rulesButton" type="button">Local rules</button>
     </div>
     <p id="locationStatus">Location is private to this device.</p>
     <p>On iPhone, use Safari's <strong>Add to Home Screen</strong> for edge-to-edge display and offline access.</p>
-    <p><a href="https://jetlag.denull.ru/en/rules/" target="_blank" rel="noopener">Official rules</a> · <a href="./rules.html" target="_blank">Full LA rules</a></p>
-    <p>Click a blue station to preview its legal hiding zone. The red line is the game border.</p>
+    <p>Use your official cards and rulebooks. <a href="./rules.html" target="_blank" rel="noopener">Local rules</a> · <a id="stopList" href="./station-reference-saturday.csv">This day's centers</a> · <a href="./stop-exclusions.csv">Exclusions by day</a></p>
+    <p>Blue stops are hiding centers for the selected day. Smaller gray stops allow boarding but their full 400 m zones cross the border. Tap a stop for details, or search any stop to see why it is excluded.</p>
+    <p class="draft">__STATUS__</p>
+    <details id="boundaryReview">
+      <summary>Expanded border comparison</summary>
+      <p id="borderComparison"></p>
+      <p>Restores Southgate (411), Hearthside (409), and Williamsburg Square (516).</p>
+      <label><input id="toggleComparison" type="checkbox"> Show previous border and restored zones</label>
+      <p>Purple dashes: previous border. Green: added area and the three restored 400 m zones. The red line is the expanded draft.</p>
+    </details>
+    <label for="serviceDay">Full-service weekend</label>
+    <select id="serviceDay"><option value="saturday">Saturday</option><option value="sunday">Sunday</option></select>
+    <p id="serviceNote"></p>
+    <p>All eligible stops are included, including nearby and opposite-direction stops. Choose one day before play and use it on every phone.</p>
+    <p>Football Saturdays use detours. <a href="https://catabus.com/services-schedules/catabus/game-day-shuttle/" target="_blank" rel="noopener">Check your date</a>.</p>
     <h2>Layers</h2>
-    <label><input id="toggleDivisions" type="checkbox" checked> Neighborhood divisions</label>
-    <label><input id="toggleLines" type="checkbox" checked> Metro Rail lines</label>
+    <label><input id="toggleDivisions" type="checkbox" checked> Municipal boundaries</label>
+    <label><input id="toggleLines" type="checkbox" checked> CATA bus routes</label>
     <label><input id="toggleBoundary" type="checkbox" checked> Game border</label>
-    <h2>Find a station</h2>
-    <input id="search" placeholder="Search station name">
+    <label><input id="toggleOtherStops" type="checkbox" checked> Boarding-only stops (gray)</label>
+    <details><summary>Streets around the border</summary><p id="borderStreets"></p></details>
+    <h2>Find a stop</h2>
+    <input id="search" placeholder="Search stop name or ID" aria-label="Search stop name or ID">
     <div id="results"></div>
     <h2>Rules snapshot</h2>
-    <p>Two players hide together as a pair; everyone else seeks together as one team. The first round starts at Union Station. Hiders get 40 minutes. Use Google Maps for game decisions and Find My for live location.</p>
-    <p>Data updated <strong id="updated"></strong>. Check Metro alerts before playing.</p>
+    <p>2–3 fixed pairs. One pair hides; everyone else seeks together. Small-game values, __HIDING_MINUTES__-minute hiding period, one 6–8-hour day. Suggested start: outside Schlow Library.</p>
+    <p>CATA data downloaded <strong id="updated"></strong>. <a href="https://catabus.com/rider-tools/riders/rider-alerts/" target="_blank" rel="noopener">Stop closures</a> checked <strong id="alertsReviewed"></strong>. Check service for your actual date before playing.</p>
   </aside>
   <div id="map"></div>
   <button id="menuButton" class="map-control" type="button" aria-label="Open menu" aria-expanded="false">
@@ -131,67 +155,25 @@
     <strong id="stationName"></strong>
     <span id="stationLines"></span>
     <span id="stationDivision"></span>
-    <span>Eligible 400 m zone center</span>
+    <span id="stationEligibility"></span>
   </section>
   <div id="mapStatus" role="status" aria-live="polite"></div>
   <dialog id="rulesDialog">
     <div class="rules-header">
-      <h2>LA Special Rules</h2>
+      <h2>State College Rules</h2>
       <button id="closeRules" type="button">Close</button>
     </div>
-    <div class="rules-body">
-      <a class="official" href="https://jetlag.denull.ru/en/rules/" target="_blank" rel="noopener">Open official rules</a>
-      <a class="official" href="./rules.html" target="_blank">Open full LA rules</a>
-      <h3>Game setup</h3>
-      <ul>
-        <li>Use <strong>small-game</strong> cards, questions, and values.</li>
-        <li><strong>Two players hide together as a pair</strong>; every other player seeks together as one team.</li>
-        <li>The hiding pair shares one station, hiding spot, answer, timer, and hider hand. Both members must be found to end the round.</li>
-        <li>The first round starts at <strong>Union Station's main concourse</strong>.</li>
-        <li>Later rounds start from the previous hiding pair's spot after the official <strong>10-minute preparation period</strong>. Do not reset to Union Station.</li>
-        <li>The hiding period is <strong>40 minutes</strong>. Not every mapped station needs to be reachable in every round.</li>
-        <li>Hiding zones are <strong>400 m / 1/4 mile</strong> straight-line circles.</li>
-        <li>Only blue station markers can center a hiding zone.</li>
-        <li>Named map neighborhoods and cities are the divisions used for prefecture/canton questions.</li>
-      </ul>
-      <h3>Transportation</h3>
-      <ul>
-        <li>Metro Rail, Metro Bus, other scheduled public buses, Metrolink, and walking are valid.</li>
-        <li>Rideshare, taxis, private cars, bicycles, scooters, and bike share are not valid.</li>
-        <li>Players may ride through the area outside the red border, but may not leave transit there or use that trip to answer a location question.</li>
-        <li>A bus stop is not an eligible hiding-zone center unless marked blue on this map.</li>
-      </ul>
-      <h3>Maps and location</h3>
-      <ul>
-        <li>Use <strong>Google Maps only</strong> for directions, distances, nearby-place searches, categories, geographic labels, and screenshots.</li>
-        <li>Use <strong>Find My</strong> for live location sharing.</li>
-        <li>The supplied interactive game map is the only exception; use it for the game border, eligible stations, divisions, and hiding zones.</li>
-        <li>Do not use other mapping or transit-planning apps to answer questions or make game decisions.</li>
-        <li>Google Street View and similar street-level imagery remain prohibited.</li>
-      </ul>
-      <h3>Stations and end game</h3>
-      <ul>
-        <li>A multi-line station complex counts as one station. Use every line shown in its popup.</li>
-        <li>"Nearest station" means the nearest eligible blue marker by straight-line distance.</li>
-        <li>Seekers are on Metro Rail until they exit the paid station area. The end game begins when they exit inside the hider's zone.</li>
-        <li>Waiting at a bus stop is not being on transit.</li>
-      </ul>
-      <h3>Safety</h3>
-      <ul>
-        <li>The final spot must be publicly accessible, within 10 feet of a mapped path or road, and safe for every player to approach.</li>
-        <li>Pause immediately for unsafe heat, smoke, police activity, medical issues, service disruptions, or any player feeling unsafe.</li>
-        <li>Excluded areas include freeway and rail infrastructure, flood channels, construction and industrial sites, school grounds, private residences, encampments, isolated trails, and anywhere closed or requiring trespass.</li>
-        <li>Any area a player identifies as uncomfortable becomes excluded immediately without debate or strategic penalty.</li>
-      </ul>
-      <p>For the detailed exclusion list, variants, edge cases, and pre-game checklist, open the <a href="./rules.html" target="_blank">full LA rules</a>.</p>
-    </div>
+    <div class="rules-body">__RULES_HTML__</div>
   </dialog>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     const data = __MAP_DATA__;
-    const map = L.map("map", { zoomControl: true });
+    let serviceDay = new URLSearchParams(location.search).get("day") === "sunday" ? "sunday" : "saturday";
+    document.getElementById("serviceDay").value = serviceDay;
+    const safeText = value => { const span = document.createElement("span"); span.textContent = value; return span.innerHTML; };
+    const map = L.map("map", { zoomControl: true, zoomSnap: 0.25 });
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19, attribution: "&copy; OpenStreetMap contributors"
+      maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
     }).addTo(map);
 
     const divisionStyle = zoom => ({
@@ -203,51 +185,132 @@
     });
     const divisions = L.geoJSON(data.divisions, {
       style: divisionStyle(map.getZoom()),
-      onEachFeature: (f, l) => l.bindTooltip(f.properties.name, { sticky: true })
+      onEachFeature: (f, l) => l.bindTooltip(safeText(f.properties.name), { sticky: true })
     }).addTo(map);
-    const lines = L.geoJSON(data.lines, {
-      style: f => ({ color: f.properties.color, weight: 5, opacity: .82 })
+    const lines = L.geoJSON(data.lines[serviceDay], {
+      style: f => ({ color: f.properties.color, weight: 3, opacity: .68 }),
+      onEachFeature: (f, layer) => layer.bindTooltip(safeText(`${f.properties.line} · ${f.properties.name}`))
     }).addTo(map);
-    const boundary = L.geoJSON(data.boundary, {
-      style: { color: "#d7263d", weight: 4, fillOpacity: 0 }
+    const boundary = L.geoJSON(data.boundary_streets, {
+      style: { color: "#d7263d", weight: 4, fillOpacity: 0 },
+      onEachFeature: (f, layer) => layer.bindTooltip(safeText(f.properties.name), { sticky: true }).bindPopup(safeText(f.properties.name))
     }).addTo(map);
+    const comparison = data.boundary_comparison;
+    const previousBoundary = L.geoJSON(comparison.previous_boundary, {
+      style: { color: "#7e22ce", weight: 3, dashArray: "8 6", fill: false }, interactive: false
+    });
+    const addedArea = L.geoJSON(comparison.added_area, {
+      style: { stroke: false, fillColor: "#16a34a", fillOpacity: .15 }, interactive: false
+    });
+    const restoredZones = data.stops.features
+      .filter(f => comparison.restored_stop_ids.includes(f.properties.stop_id))
+      .map(f => L.circle([...f.geometry.coordinates].reverse(), {
+        radius: f.properties.zone_m, color: "#15803d", weight: 2, fillOpacity: .08,
+        interactive: false
+      }));
+    const comparisonLayer = L.layerGroup([addedArea, previousBoundary, ...restoredZones]);
 
     let zone;
+    let focusMarker;
+    let selectedStation;
     const stationInfo = document.getElementById("stationInfo");
-    const selectStation = (feature, layer) => {
-      if (zone) map.removeLayer(zone);
-      zone = L.circle(layer.getLatLng(), {
-        radius: feature.properties.zone_m, color: "#d7263d", weight: 2,
-        fillColor: "#d7263d", fillOpacity: .16
-      }).addTo(map);
-      zone.bringToBack();
-      document.getElementById("stationName").textContent = feature.properties.name;
-      document.getElementById("stationLines").textContent = feature.properties.lines.join(", ") || "Metro Rail";
-      document.getElementById("stationDivision").textContent = feature.properties.division;
+    const dayName = () => serviceDay === "saturday" ? "Saturday" : "Sunday";
+    const selectStation = feature => {
+      selectedStation = feature;
+      if (zone) { map.removeLayer(zone); zone = null; }
+      if (focusMarker) { map.removeLayer(focusMarker); focusMarker = null; }
+      const p = feature.properties;
+      const eligible = p.eligibility[serviceDay];
+      const latlng = [...feature.geometry.coordinates].reverse();
+      if (eligible.center) {
+        zone = L.circle(latlng, {
+          radius: p.zone_m, color: "#d7263d", weight: 2,
+          fillColor: "#d7263d", fillOpacity: .16
+        }).addTo(map);
+        zone.bringToBack();
+      } else {
+        focusMarker = L.circleMarker(latlng, { radius: 9, color: "#475569", weight: 2, fill: false }).addTo(map);
+      }
+      document.getElementById("stationName").textContent = p.name;
+      const service = p.service[serviceDay];
+      document.getElementById("stationLines").textContent = `${dayName()} · stop ${p.stop_id} · ${service.lines.length ? 'Scheduled: ' + service.lines.join(", ") : 'No boarding service in the reference window'}`;
+      document.getElementById("stationDivision").textContent = (p.division ? `${p.division} · ` : "") +
+        (service.departures ? `${service.first_departure}–${service.last_departure} Eastern · largest scheduled gap: ${service.max_gap_minutes} min (10–18 window)` : "");
+      document.getElementById("stationEligibility").textContent = eligible.center
+        ? `Eligible ${p.zone_m} m hiding center on ${dayName()}`
+        : `${eligible.boarding ? 'Boarding only' : 'Not available as a game center'}: ${eligible.reasons.join(" ")}`;
       stationInfo.classList.add("visible");
     };
-    document.getElementById("closeStationInfo").addEventListener("click", () => stationInfo.classList.remove("visible"));
-    const stationLayers = [];
-    const stations = L.geoJSON(data.stations, {
+    document.getElementById("closeStationInfo").addEventListener("click", () => {
+      stationInfo.classList.remove("visible");
+      if (zone) { map.removeLayer(zone); zone = null; }
+      if (focusMarker) { map.removeLayer(focusMarker); focusMarker = null; }
+      selectedStation = null;
+    });
+    const stations = L.geoJSON(null, {
       pointToLayer: (f, latlng) => L.circleMarker(latlng, {
-        radius: 6, color: "#fff", weight: 2, fillColor: "#1261a0", fillOpacity: 1
+        radius: map.getZoom() >= 15 ? 6 : 4.5, color: "#fff", weight: 1.5, fillColor: "#1261a0", fillOpacity: 1
       }),
       onEachFeature: (f, layer) => {
-        stationLayers.push({ feature: f, layer });
-        layer.on("click", () => selectStation(f, layer));
+        layer.bindTooltip(safeText(`${f.properties.name} · ${f.properties.stop_id}`));
+        layer.on("click", () => selectStation(f));
+      }
+    }).addTo(map);
+    const otherStops = L.geoJSON(null, {
+      pointToLayer: (f, latlng) => L.circleMarker(latlng, {
+        radius: 3.5, color: "#fff", weight: 1, fillColor: "#64748b", fillOpacity: 1
+      }),
+      onEachFeature: (f, layer) => {
+        layer.bindTooltip(safeText(`${f.properties.name} · ${f.properties.stop_id} · boarding only`));
+        layer.on("click", () => selectStation(f));
       }
     }).addTo(map);
 
     map.fitBounds(boundary.getBounds(), { padding: [12, 12] });
-    map.on("zoomend", () => divisions.setStyle(divisionStyle(map.getZoom())));
-    document.getElementById("count").textContent = `${data.station_count} stations`;
+    map.on("zoomend", () => {
+      divisions.setStyle(divisionStyle(map.getZoom()));
+      stations.eachLayer(layer => layer.setRadius(map.getZoom() >= 15 ? 6 : 4.5));
+    });
     document.getElementById("updated").textContent = data.updated;
+    document.getElementById("alertsReviewed").textContent = data.alerts_reviewed;
+    document.getElementById("borderComparison").textContent =
+      `${comparison.area_km2.toFixed(1)} km² compared with ${comparison.previous_area_km2.toFixed(1)} km². Adds ${comparison.added_area_km2.toFixed(1)} km² (${comparison.increase_percent.toFixed(0)}%). The purple outline is from the earlier ${comparison.previous_station_count}-center draft; the current blue centers depend on the day.`;
+    document.getElementById("borderStreets").textContent = data.boundary.properties.streets.join(" → ") + " → back to Blue Course Drive.";
+    const updateDay = () => {
+      lines.clearLayers().addData(data.lines[serviceDay]);
+      stations.clearLayers().addData(data.stations[serviceDay]);
+      const boardingOnly = data.stops.features.filter(f => {
+        const e = f.properties.eligibility[serviceDay];
+        return e.boarding && !e.center;
+      });
+      otherStops.clearLayers().addData(boardingOnly);
+      stations.bringToFront();
+      document.getElementById("count").textContent = `${data.station_counts[serviceDay]} ${dayName()} centers`;
+      document.getElementById("serviceNote").textContent = `Reference: ${data.reference_dates[serviceDay]}, 10 a.m.–6 p.m. Eastern. ${data.station_counts[serviceDay]} hiding centers and ${boardingOnly.length} boarding-only stops.`;
+      document.getElementById("stopList").href = `./station-reference-${serviceDay}.csv`;
+      if (selectedStation) selectStation(selectedStation);
+      renderSearch();
+    };
+    document.getElementById("serviceDay").addEventListener("change", event => {
+      serviceDay = event.target.value;
+      const url = new URL(location.href);
+      url.searchParams.set("day", serviceDay);
+      history.replaceState(null, "", url);
+      updateDay();
+    });
     const bindToggle = (id, layer) => document.getElementById(id).addEventListener("change", e => {
       e.target.checked ? layer.addTo(map) : map.removeLayer(layer);
     });
     bindToggle("toggleDivisions", divisions);
     bindToggle("toggleLines", lines);
     bindToggle("toggleBoundary", boundary);
+    bindToggle("toggleOtherStops", otherStops);
+    bindToggle("toggleComparison", comparisonLayer);
+    document.getElementById("toggleComparison").addEventListener("change", () => {
+      boundary.bringToFront();
+      otherStops.bringToFront();
+      stations.bringToFront();
+    });
 
     const sidebar = document.querySelector("aside");
     const menuButton = document.getElementById("menuButton");
@@ -318,21 +381,29 @@
 
     const search = document.getElementById("search");
     const results = document.getElementById("results");
-    search.addEventListener("input", () => {
+    const renderSearch = () => {
       const query = search.value.trim().toLowerCase();
       results.innerHTML = "";
       if (!query) return;
-      stationLayers.filter(x => x.feature.properties.name.toLowerCase().includes(query)).slice(0, 8).forEach(x => {
+      const exactStop = data.stops.features.find(f => f.properties.stop_id === query);
+      const matches = exactStop ? [exactStop] : data.stops.features.filter(f => f.properties.name.toLowerCase().includes(query));
+      matches.sort((a, b) => Number(b.properties.eligibility[serviceDay].center) - Number(a.properties.eligibility[serviceDay].center));
+      if (!matches.length) results.textContent = "No matching stops.";
+      matches.forEach(feature => {
+        const p = feature.properties;
+        const e = p.eligibility[serviceDay];
         const button = document.createElement("button");
-        button.textContent = x.feature.properties.name;
+        button.textContent = `${p.name} · ${p.stop_id} · ${e.center ? 'hiding center' : e.boarding ? 'boarding only' : 'unavailable'}`;
         button.onclick = () => {
           setMenuOpen(false);
-          map.setView(x.layer.getLatLng(), 15);
-          selectStation(x.feature, x.layer);
+          map.setView([...feature.geometry.coordinates].reverse(), 15);
+          selectStation(feature);
         };
         results.appendChild(button);
       });
-    });
+    };
+    search.addEventListener("input", renderSearch);
+    updateDay();
 
     if ("serviceWorker" in navigator && window.isSecureContext) {
       window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));

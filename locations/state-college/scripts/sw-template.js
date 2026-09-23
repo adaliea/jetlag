@@ -1,13 +1,16 @@
-const CACHE_NAME = "jetlag-la-b545bb531374";
-const TILE_CACHE = "jetlag-la-tiles-v1";
+const CACHE_NAME = "jetlag-state-college-__CACHE_VERSION__";
+const TILE_CACHE = "jetlag-state-college-tiles-v1";
 const MAX_TILE_ENTRIES = 500;
 const APP_SHELL = [
   "./",
   "./index.html",
   "./rules.html",
-  "./RULES_LA.md",
+  "./RULES_STATE_COLLEGE.md",
   "./map-data.geojson.json",
   "./station-reference.csv",
+  "./station-reference-saturday.csv",
+  "./station-reference-sunday.csv",
+  "./stop-exclusions.csv",
   "./manifest.webmanifest",
   "./favicon.svg",
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
@@ -31,7 +34,7 @@ self.addEventListener("activate", event => {
   event.waitUntil(
     caches.keys()
       .then(keys => Promise.all(
-        keys.filter(key => key.startsWith("jetlag-la-") && key !== CACHE_NAME && key !== TILE_CACHE)
+        keys.filter(key => key.startsWith("jetlag-state-college-") && key !== CACHE_NAME && key !== TILE_CACHE)
           .map(key => caches.delete(key))
       ))
       .then(() => self.clients.claim())
@@ -41,6 +44,9 @@ self.addEventListener("activate", event => {
 self.addEventListener("fetch", event => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
+  const scope = new URL(self.registration.scope);
+  // Let other locations handle their own navigation and offline fallback.
+  if (url.origin === scope.origin && !url.pathname.startsWith(scope.pathname)) return;
 
   if (url.hostname === "tile.openstreetmap.org") {
     event.respondWith(

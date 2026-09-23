@@ -1,0 +1,20 @@
+{
+  "name": "Jet Lag: Hide + Seek State College",
+  "short_name": "Jet Lag SC",
+  "description": "Interactive State College map and local rules for Jet Lag Hide + Seek.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#172331",
+  "theme_color": "#172331",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "./"
+}

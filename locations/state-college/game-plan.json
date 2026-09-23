@@ -1,0 +1,45 @@
+{
+  "location": "State College, Pennsylvania",
+  "timezone": "America/New_York",
+  "status": "draft-map-for-review",
+  "game_size": "Small",
+  "footprint": "Town + campus",
+  "play_dates": [],
+  "daily_hours": [
+    6,
+    8
+  ],
+  "player_count": null,
+  "team_format": "fixed-pairs; all non-hiding pairs seek together",
+  "hiding_minutes": 45,
+  "zone_radius_m": 400,
+  "transportation": [
+    "CATA fixed-route buses",
+    "walking"
+  ],
+  "starting_point": null,
+  "mapping_app": null,
+  "location_sharing_app": null,
+  "player_count_options": [
+    4,
+    6
+  ],
+  "team_count_options": [
+    2,
+    3
+  ],
+  "players_per_team": 2,
+  "service_period": "full-service-weekend",
+  "date_preference": "September 26\u201327, October 3\u20134, or later; exact date undecided",
+  "days": 1,
+  "final_hiding_spots": "student-access-common-areas",
+  "reference_dates": {
+    "saturday": "2026-10-03",
+    "sunday": "2026-10-04"
+  },
+  "center_selection": "all-eligible-stops-by-day",
+  "service_window": {
+    "start": "10:00:00",
+    "end": "18:00:00"
+  }
+}

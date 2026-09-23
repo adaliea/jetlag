@@ -1,72 +1,92 @@
-# Jet Lag: Hide + Seek Los Angeles
+# Jet Lag: Hide + Seek maps
 
-An LA-specific small game for the official Jet Lag: The Game Hide + Seek
-home game.
+One repository and website for the Los Angeles and State College home games.
+Use your official cards and rulebooks alongside each location's local rules.
 
-## Start here
+**[Choose a location](https://jetlag.adalie.me/)**
 
-1. Read [RULES_LA.md](RULES_LA.md).
-2. Open [map/index.html](map/index.html) in a browser.
-3. At Union Station, randomly choose the first hiding pair and begin a 40-minute
-   hiding period.
+| Location | Map | Source and local rules |
+| --- | --- | --- |
+| State College, PA | [jetlag.adalie.me/state-college/](https://jetlag.adalie.me/state-college/) | [locations/state-college](locations/state-college) |
+| Los Angeles, CA | [jetlag.adalie.me/la/](https://jetlag.adalie.me/la/) | [locations/la](locations/la) |
 
-The standard game uses Metro Rail stations inside the map as eligible hiding
-zone centers. The interactive map shows the agreed game border, current rail
-lines, neighborhood divisions, and a 400 m hiding-zone preview for every
-eligible station. It also includes opt-in device location, an official-rules
-link, an in-map LA special-rules panel, and a rendered full-rules page with
-the safety exclusion list. The site is installable as a Home Screen web app
-and caches the app plus previously viewed map tiles for offline use.
+State College has separate Saturday and Sunday center sets. LA retains its
+original rail game. Each location has its own rules, map data, downloads,
+installable app, and offline cache.
 
-For an offline lookup table, use
-[map/station-reference.csv](map/station-reference.csv).
+## Repository layout
 
-## Why this differs from the older LA map
-
-The useful core of
-[kavigupta/jet-lag-small-game-la](https://github.com/kavigupta/jet-lag-small-game-la)
-is retained: a central-LA border, neighborhood/CDP divisions, and a
-transit-centered game.
-
-The older map used July 2023 rail data and included 530 multi-line bus stops,
-for 581 total hiding centers. This edition uses current Metro Rail data and
-keeps the standard game within the official small-game recommendation of
-30-100 stations. In particular, it includes the three D Line Extension
-Section 1 stations now present in Metro's current feed.
-
-## Rebuild the map
-
-The checked-in map is ready to play. To refresh it after a Metro service
-change:
-
-```powershell
-Invoke-WebRequest -Uri 'https://gitlab.com/LACMTA/gtfs_rail/-/raw/master/gtfs_rail.zip' -OutFile 'gtfs_rail.zip'
-Expand-Archive -Path gtfs_rail.zip -DestinationPath current-gtfs-rail -Force
-python scripts/build_map.py
+```text
+locations/
+  la/              # LA builder, rules, and generated map/
+  state-college/   # State College builder, reviewed data, rules, tests, and map/
+site/              # Location picker and shared static hosting files
+scripts/           # Combined-site packaging
+deploy/            # Redirect for the old LA address
+dist/              # Generated website; ignored by Git
+wrangler.toml      # The jetlag Worker at jetlag.adalie.me
 ```
 
-The builder intentionally uses the older project's hand-drawn central-LA
-border and neighborhood divisions as its geographic base.
+The repository preserves the original LA Git history. State College was
+imported from the local copy based on commit `d880795`. The GitHub repository
+is [adaliea/jetlag](https://github.com/adaliea/jetlag).
 
-## Deploy to Cloudflare Workers
+## Preview and deploy
 
-The `map/` directory is configured as a static Workers asset bundle in
-`wrangler.toml`.
+Requires Node.js 22+ and Python 3.10+.
 
-```powershell
-npm install
+```bash
+npm ci
+npm run build
 npm run dev
+```
+
+`build` packages the checked-in maps into `dist/la/` and `dist/state-college/`
+without downloading or changing transit data. `dev` serves the combined site
+with Cloudflare's routing behavior. `npm run preview` provides a simpler
+Python HTTP server at http://localhost:5174/.
+
+To publish both maps together:
+
+```bash
 npm run deploy
 ```
 
-`npm run deploy` publishes the committed files in `map/`. Use
-`npm run deploy:refresh` locally to rebuild the map from downloaded Metro and
-reference data before publishing it. Wrangler will prompt for Cloudflare
-authentication if needed. To change the Workers project name, edit `name` in
-`wrangler.toml`.
+Wrangler authentication is required (`npx wrangler login` on a new machine).
+The only published files are in `dist/`; raw data and source stay in Git.
+Deployment is manual; pushing a commit does not deploy automatically.
 
-## Sources
+## Rebuild map data and run checks
 
-- [Official home-game rules](https://jetlag.denull.ru/en/rules/)
-- [LA Metro current rail GTFS](https://gitlab.com/LACMTA/gtfs_rail)
-- [Older LA map and source data](https://github.com/kavigupta/jet-lag-small-game-la)
+```bash
+npm run setup:python
+npm run build:state-college
+npm test
+```
+
+The reviewed CATA feed snapshot is checked in so the State College map and
+tests are reproducible from a fresh clone. `npm run refresh:state-college`
+downloads a new feed and records its checksum. Review reference dates and
+service changes before rebuilding from new data.
+
+`npm run build:la` rebuilds LA when its Metro GTFS and reference geometry
+inputs are present. See [the LA guide](locations/la/README.md) for those inputs.
+Ordinary site builds and deployments use its checked-in map and need no
+transit download. Each map build also repackages the combined site.
+
+`npm test` checks the LA redirect and installed-app migration, plus the State
+College schedule, boundary, stop-selection, CSV, and reproducibility checks.
+
+## Previous addresses
+
+- `la.jetlag.adalie.me` and `jetlag-la.dacubeking.workers.dev` permanently
+  redirect to `/la/`, preserving paths and query strings. The small legacy
+  Worker also updates old installed apps so their service worker does not
+  trap them on a cached copy. Its source lives in this repository; deploy it
+  with `npm run deploy:la-redirect` after the main site is live.
+- The previous `statecollege.jetlag.adalie.me` deployment is retired. Use
+  `/state-college/` for State College.
+- The main Worker's fallback URL is `https://jetlag.dacubeking.workers.dev/`.
+
+Location navigation uses paths relative to the site root. Preview the combined
+site when editing either map. Both public maps use HTTPS; Tailscale is optional.

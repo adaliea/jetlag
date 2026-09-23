@@ -1,0 +1,15 @@
+{
+  "reviewed": "2026-09-21",
+  "source": "https://catabus.com/rider-tools/riders/rider-alerts/",
+  "excluded_stops": {
+    "161": "CATA reports E College Ave at Your Building Center closed due to construction.",
+    "471": "CATA reports North Atherton St at Douglas Dr closed for construction; use stop 473 at Fairwood Lane.",
+    "2004": "CATA reports Easterly Parkway at S Pugh St closed for construction.",
+    "384": "CATA reports Easterly Parkway at Manorway Apts closed for construction.",
+    "718": "CATA reports Easterly Parkway at Garner St closed for construction."
+  },
+  "notes": [
+    "CATA also reports no CC service to Lemont during Pike Street construction. The reference feed already has no weekend boarding calls at the Pike Street / Elmwood Street stops.",
+    "Home-football Saturday detours are not modeled; use normal full-service reference days only."
+  ]
+}

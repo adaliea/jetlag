@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#172331">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Jet Lag LA">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicon.svg">
+  <title>Jet Lag: Hide + Seek Los Angeles</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #f4efe5; color: #1e2630; touch-action: manipulation; }
+    #map { position: fixed; inset: 0 0 0 320px; background: #d9e2e8; }
+    .leaflet-tile-pane {
+      filter: grayscale(.72) saturate(.45) brightness(1.12) contrast(.84);
+    }
+    .leaflet-tile {
+      image-rendering: auto;
+    }
+    aside { position: fixed; inset: 0 auto 0 0; width: 320px; padding: 22px; overflow: auto; background: #172331; color: #f8f1e4; box-shadow: 3px 0 16px #0004; z-index: 1100; }
+    h1 { margin: 0 0 8px; font-size: 24px; line-height: 1.05; }
+    h2 { margin: 22px 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: .12em; color: #e9b44c; }
+    p, li { font-size: 13px; line-height: 1.45; }
+    a { color: #ffd27a; }
+    .stat { display: inline-block; margin: 6px 4px 0 0; padding: 6px 9px; border: 1px solid #ffffff35; border-radius: 999px; font-size: 12px; }
+    .actions { display: grid; gap: 8px; margin: 14px 0 6px; }
+    button, .button { padding: 9px 10px; border: 1px solid #ffffff45; border-radius: 5px; background: #ffffff12; color: white; font: inherit; text-align: center; cursor: pointer; text-decoration: none; touch-action: manipulation; }
+    button:hover, .button:hover { background: #ffffff20; }
+    #locationStatus { min-height: 18px; margin: 5px 0 0; color: #dce8f3; font-size: 12px; }
+    .map-control { position: fixed; z-index: 1050; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 8px; background: white; color: #172331; box-shadow: 0 2px 10px #0004; }
+    .map-control:hover { background: #f4efe5; }
+    .map-control svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    #locationButton { right: 14px; bottom: 28px; }
+    #menuButton { display: none; top: 14px; right: 14px; }
+    #closeMenu { display: none; position: absolute; top: 14px; right: 14px; width: 44px; height: 44px; padding: 0; font-size: 28px; line-height: 1; }
+    label { display: block; margin: 8px 0; font-size: 13px; }
+    input { vertical-align: middle; }
+    #search { width: 100%; padding: 9px; border: 0; border-radius: 5px; font-size: 16px; }
+    #results button { width: 100%; padding: 7px 0; border: 0; border-bottom: 1px solid #ffffff20; background: none; color: white; text-align: left; cursor: pointer; }
+    #stationInfo { position: fixed; left: 334px; bottom: 18px; z-index: 1050; display: none; width: min(340px, calc(100% - 410px)); padding: 14px 44px 14px 16px; border-radius: 8px; background: #172331; color: white; box-shadow: 0 2px 12px #0005; }
+    #stationInfo.visible { display: block; }
+    #stationInfo strong { display: block; margin-bottom: 3px; font-size: 15px; }
+    #stationInfo span { display: block; font-size: 12px; line-height: 1.45; }
+    #closeStationInfo { position: absolute; top: 6px; right: 6px; width: 32px; height: 32px; padding: 0; border: 0; font-size: 23px; }
+    #mapStatus { position: fixed; z-index: 1060; left: 50%; bottom: 24px; display: none; max-width: calc(100% - 130px); padding: 9px 12px; border-radius: 6px; background: #172331; color: white; box-shadow: 0 2px 10px #0005; font-size: 13px; transform: translateX(-50%); }
+    #mapStatus.visible { display: block; }
+    dialog { width: min(720px, calc(100% - 24px)); max-height: calc(100% - 24px); padding: 0; border: 0; border-radius: 8px; color: #1e2630; }
+    dialog::backdrop { background: #101923bb; }
+    .rules-header { position: sticky; top: 0; display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 16px 20px; background: #172331; color: white; }
+    .rules-header h2 { margin: 0; color: #e9b44c; }
+    .rules-body { padding: 4px 20px 24px; }
+    .rules-body h3 { margin: 20px 0 5px; font-size: 15px; }
+    .rules-body p, .rules-body li { font-size: 14px; }
+    .rules-body .official { display: inline-block; margin: 12px 0 4px; padding: 10px 12px; border-radius: 5px; background: #1261a0; color: white; text-decoration: none; }
+    .location-dot { width: 18px; height: 18px; border: 3px solid white; border-radius: 50%; background: #1677ff; box-shadow: 0 0 0 2px #1677ff55; }
+    @media (max-width: 720px) {
+      #map {
+        top: calc(-1 * env(safe-area-inset-top));
+        right: calc(-1 * env(safe-area-inset-right));
+        bottom: calc(-1 * env(safe-area-inset-bottom));
+        left: calc(-1 * env(safe-area-inset-left));
+      }
+      aside {
+        inset: 0;
+        width: 100%;
+        padding:
+          calc(64px + env(safe-area-inset-top))
+          calc(22px + env(safe-area-inset-right))
+          calc(28px + env(safe-area-inset-bottom))
+          calc(22px + env(safe-area-inset-left));
+        box-shadow: none;
+        transform: translateX(-100%);
+        transition: transform .2s ease;
+      }
+      aside.open { transform: translateX(0); }
+      body.menu-open { overflow: hidden; }
+      #menuButton, #closeMenu { display: grid; place-items: center; }
+      body.menu-open #menuButton, body.menu-open #locationButton { display: none; }
+      #menuButton { top: calc(14px + env(safe-area-inset-top)); right: calc(14px + env(safe-area-inset-right)); }
+      #closeMenu { top: calc(14px + env(safe-area-inset-top)); right: calc(14px + env(safe-area-inset-right)); }
+      #locationButton { bottom: calc(24px + env(safe-area-inset-bottom)); right: calc(14px + env(safe-area-inset-right)); }
+      #stationInfo {
+        left: calc(14px + env(safe-area-inset-left));
+        bottom: calc(78px + env(safe-area-inset-bottom));
+        width: calc(100% - 28px - env(safe-area-inset-left) - env(safe-area-inset-right));
+      }
+      #mapStatus { bottom: calc(80px + env(safe-area-inset-bottom)); }
+      .leaflet-control-zoom { margin-top: calc(10px + env(safe-area-inset-top)) !important; margin-left: calc(10px + env(safe-area-inset-left)) !important; }
+      .leaflet-control-attribution { padding-right: env(safe-area-inset-right); padding-bottom: env(safe-area-inset-bottom); }
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <button id="closeMenu" type="button" aria-label="Close menu">&times;</button>
+    <h1>Hide + Seek<br>Los Angeles</h1>
+    <p><a href="/">All locations</a> · <a href="/state-college/">State College map</a></p>
+    <div><span class="stat" id="count"></span><span class="stat">Small game</span><span class="stat">400 m zones</span></div>
+    <div class="actions">
+      <button id="rulesButton" type="button">LA special rules</button>
+    </div>
+    <p id="locationStatus">Location is private to this device.</p>
+    <p>On iPhone, use Safari's <strong>Add to Home Screen</strong> for edge-to-edge display and offline access.</p>
+    <p><a href="https://jetlag.denull.ru/en/rules/" target="_blank" rel="noopener">Official rules</a> · <a href="./rules.html" target="_blank">Full LA rules</a></p>
+    <p>Click a blue station to preview its legal hiding zone. The red line is the game border.</p>
+    <h2>Layers</h2>
+    <label><input id="toggleDivisions" type="checkbox" checked> Neighborhood divisions</label>
+    <label><input id="toggleLines" type="checkbox" checked> Metro Rail lines</label>
+    <label><input id="toggleBoundary" type="checkbox" checked> Game border</label>
+    <h2>Find a station</h2>
+    <input id="search" placeholder="Search station name">
+    <div id="results"></div>
+    <h2>Rules snapshot</h2>
+    <p>Two players hide together as a pair; everyone else seeks together as one team. The first round starts at Union Station. Hiders get 40 minutes. Use Google Maps for game decisions and Find My for live location.</p>
+    <p>Data updated <strong id="updated"></strong>. Check Metro alerts before playing.</p>
+  </aside>
+  <div id="map"></div>
+  <button id="menuButton" class="map-control" type="button" aria-label="Open menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+  </button>
+  <button id="locationButton" class="map-control" type="button" aria-label="Go to my location" title="Go to my location">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+  </button>
+  <section id="stationInfo" aria-live="polite">
+    <button id="closeStationInfo" type="button" aria-label="Close station information">&times;</button>
+    <strong id="stationName"></strong>
+    <span id="stationLines"></span>
+    <span id="stationDivision"></span>
+    <span>Eligible 400 m zone center</span>
+  </section>
+  <div id="mapStatus" role="status" aria-live="polite"></div>
+  <dialog id="rulesDialog">
+    <div class="rules-header">
+      <h2>LA Special Rules</h2>
+      <button id="closeRules" type="button">Close</button>
+    </div>
+    <div class="rules-body">
+      <a class="official" href="https://jetlag.denull.ru/en/rules/" target="_blank" rel="noopener">Open official rules</a>
+      <a class="official" href="./rules.html" target="_blank">Open full LA rules</a>
+      <h3>Game setup</h3>
+      <ul>
+        <li>Use <strong>small-game</strong> cards, questions, and values.</li>
+        <li><strong>Two players hide together as a pair</strong>; every other player seeks together as one team.</li>
+        <li>The hiding pair shares one station, hiding spot, answer, timer, and hider hand. Both members must be found to end the round.</li>
+        <li>The first round starts at <strong>Union Station's main concourse</strong>.</li>
+        <li>Later rounds start from the previous hiding pair's spot after the official <strong>10-minute preparation period</strong>. Do not reset to Union Station.</li>
+        <li>The hiding period is <strong>40 minutes</strong>. Not every mapped station needs to be reachable in every round.</li>
+        <li>Hiding zones are <strong>400 m / 1/4 mile</strong> straight-line circles.</li>
+        <li>Only blue station markers can center a hiding zone.</li>
+        <li>Named map neighborhoods and cities are the divisions used for prefecture/canton questions.</li>
+      </ul>
+      <h3>Transportation</h3>
+      <ul>
+        <li>Metro Rail, Metro Bus, other scheduled public buses, Metrolink, and walking are valid.</li>
+        <li>Rideshare, taxis, private cars, bicycles, scooters, and bike share are not valid.</li>
+        <li>Players may ride through the area outside the red border, but may not leave transit there or use that trip to answer a location question.</li>
+        <li>A bus stop is not an eligible hiding-zone center unless marked blue on this map.</li>
+      </ul>
+      <h3>Maps and location</h3>
+      <ul>
+        <li>Use <strong>Google Maps only</strong> for directions, distances, nearby-place searches, categories, geographic labels, and screenshots.</li>
+        <li>Use <strong>Find My</strong> for live location sharing.</li>
+        <li>The supplied interactive game map is the only exception; use it for the game border, eligible stations, divisions, and hiding zones.</li>
+        <li>Do not use other mapping or transit-planning apps to answer questions or make game decisions.</li>
+        <li>Google Street View and similar street-level imagery remain prohibited.</li>
+      </ul>
+      <h3>Stations and end game</h3>
+      <ul>
+        <li>A multi-line station complex counts as one station. Use every line shown in its popup.</li>
+        <li>"Nearest station" means the nearest eligible blue marker by straight-line distance.</li>
+        <li>Seekers are on Metro Rail until they exit the paid station area. The end game begins when they exit inside the hider's zone.</li>
+        <li>Waiting at a bus stop is not being on transit.</li>
+      </ul>
+      <h3>Safety</h3>
+      <ul>
+        <li>The final spot must be publicly accessible, within 10 feet of a mapped path or road, and safe for every player to approach.</li>
+        <li>Pause immediately for unsafe heat, smoke, police activity, medical issues, service disruptions, or any player feeling unsafe.</li>
+        <li>Excluded areas include freeway and rail infrastructure, flood channels, construction and industrial sites, school grounds, private residences, encampments, isolated trails, and anywhere closed or requiring trespass.</li>
+        <li>Any area a player identifies as uncomfortable becomes excluded immediately without debate or strategic penalty.</li>
+      </ul>
+      <p>For the detailed exclusion list, variants, edge cases, and pre-game checklist, open the <a href="./rules.html" target="_blank">full LA rules</a>.</p>
+    </div>
+  </dialog>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const data = __MAP_DATA__;
+    const map = L.map("map", { zoomControl: true });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, attribution: "&copy; OpenStreetMap contributors"
+    }).addTo(map);
+
+    const divisionStyle = zoom => ({
+      color: zoom >= 15 ? "#26384a" : zoom >= 13 ? "#435a70" : "#64748b",
+      weight: zoom >= 15 ? 4 : zoom >= 13 ? 2.5 : 1.25,
+      opacity: zoom >= 13 ? .95 : .72,
+      fillColor: "#e9b44c",
+      fillOpacity: zoom >= 15 ? .1 : zoom >= 13 ? .075 : .045
+    });
+    const divisions = L.geoJSON(data.divisions, {
+      style: divisionStyle(map.getZoom()),
+      onEachFeature: (f, l) => l.bindTooltip(f.properties.name, { sticky: true })
+    }).addTo(map);
+    const lines = L.geoJSON(data.lines, {
+      style: f => ({ color: f.properties.color, weight: 5, opacity: .82 })
+    }).addTo(map);
+    const boundary = L.geoJSON(data.boundary, {
+      style: { color: "#d7263d", weight: 4, fillOpacity: 0 }
+    }).addTo(map);
+
+    let zone;
+    const stationInfo = document.getElementById("stationInfo");
+    const selectStation = (feature, layer) => {
+      if (zone) map.removeLayer(zone);
+      zone = L.circle(layer.getLatLng(), {
+        radius: feature.properties.zone_m, color: "#d7263d", weight: 2,
+        fillColor: "#d7263d", fillOpacity: .16
+      }).addTo(map);
+      zone.bringToBack();
+      document.getElementById("stationName").textContent = feature.properties.name;
+      document.getElementById("stationLines").textContent = feature.properties.lines.join(", ") || "Metro Rail";
+      document.getElementById("stationDivision").textContent = feature.properties.division;
+      stationInfo.classList.add("visible");
+    };
+    document.getElementById("closeStationInfo").addEventListener("click", () => stationInfo.classList.remove("visible"));
+    const stationLayers = [];
+    const stations = L.geoJSON(data.stations, {
+      pointToLayer: (f, latlng) => L.circleMarker(latlng, {
+        radius: 6, color: "#fff", weight: 2, fillColor: "#1261a0", fillOpacity: 1
+      }),
+      onEachFeature: (f, layer) => {
+        stationLayers.push({ feature: f, layer });
+        layer.on("click", () => selectStation(f, layer));
+      }
+    }).addTo(map);
+
+    map.fitBounds(boundary.getBounds(), { padding: [12, 12] });
+    map.on("zoomend", () => divisions.setStyle(divisionStyle(map.getZoom())));
+    document.getElementById("count").textContent = `${data.station_count} stations`;
+    document.getElementById("updated").textContent = data.updated;
+    const bindToggle = (id, layer) => document.getElementById(id).addEventListener("change", e => {
+      e.target.checked ? layer.addTo(map) : map.removeLayer(layer);
+    });
+    bindToggle("toggleDivisions", divisions);
+    bindToggle("toggleLines", lines);
+    bindToggle("toggleBoundary", boundary);
+
+    const sidebar = document.querySelector("aside");
+    const menuButton = document.getElementById("menuButton");
+    const closeMenu = document.getElementById("closeMenu");
+    const setMenuOpen = open => {
+      sidebar.classList.toggle("open", open);
+      document.body.classList.toggle("menu-open", open);
+      menuButton.setAttribute("aria-expanded", String(open));
+    };
+    menuButton.addEventListener("click", () => setMenuOpen(true));
+    closeMenu.addEventListener("click", () => setMenuOpen(false));
+
+    const rulesDialog = document.getElementById("rulesDialog");
+    document.getElementById("rulesButton").addEventListener("click", () => {
+      setMenuOpen(false);
+      rulesDialog.showModal();
+    });
+    document.getElementById("closeRules").addEventListener("click", () => rulesDialog.close());
+    rulesDialog.addEventListener("click", event => {
+      if (event.target === rulesDialog) rulesDialog.close();
+    });
+
+    const locationButton = document.getElementById("locationButton");
+    const locationStatus = document.getElementById("locationStatus");
+    const mapStatus = document.getElementById("mapStatus");
+    let locationMarker;
+    let accuracyCircle;
+    let statusTimer;
+    const locationIcon = L.divIcon({ className: "", html: '<div class="location-dot"></div>', iconSize: [18, 18], iconAnchor: [9, 9] });
+    const showMapStatus = message => {
+      clearTimeout(statusTimer);
+      mapStatus.textContent = message;
+      mapStatus.classList.add("visible");
+      statusTimer = setTimeout(() => mapStatus.classList.remove("visible"), 7000);
+    };
+
+    locationButton.addEventListener("click", () => {
+      if (!window.isSecureContext) {
+        showMapStatus("Location requires HTTPS on iPhone. Open the deployed Cloudflare URL, not a local HTTP address.");
+        return;
+      }
+      if (!navigator.geolocation) {
+        showMapStatus("This browser does not support location.");
+        return;
+      }
+      locationStatus.textContent = "Waiting for location permission...";
+      showMapStatus("Requesting your location...");
+      navigator.geolocation.getCurrentPosition(position => {
+        const latlng = [position.coords.latitude, position.coords.longitude];
+        if (!locationMarker) {
+          locationMarker = L.marker(latlng, { icon: locationIcon, zIndexOffset: 1000 }).addTo(map);
+          accuracyCircle = L.circle(latlng, { radius: position.coords.accuracy, color: "#1677ff", weight: 1, fillOpacity: .08 }).addTo(map);
+        } else {
+          locationMarker.setLatLng(latlng);
+          accuracyCircle.setLatLng(latlng).setRadius(position.coords.accuracy);
+        }
+        map.setView(latlng, Math.max(map.getZoom(), 15));
+        locationStatus.textContent = `Location accuracy: about ${Math.round(position.coords.accuracy)} m. Not shared.`;
+        showMapStatus(`Location found, accurate to about ${Math.round(position.coords.accuracy)} m.`);
+      }, error => {
+        const message = error.code === 1
+          ? "Location permission was denied."
+          : "Could not determine your location.";
+        locationStatus.textContent = message;
+        showMapStatus(message);
+      }, { enableHighAccuracy: true, maximumAge: 5000, timeout: 15000 });
+    });
+
+    const search = document.getElementById("search");
+    const results = document.getElementById("results");
+    search.addEventListener("input", () => {
+      const query = search.value.trim().toLowerCase();
+      results.innerHTML = "";
+      if (!query) return;
+      stationLayers.filter(x => x.feature.properties.name.toLowerCase().includes(query)).slice(0, 8).forEach(x => {
+        const button = document.createElement("button");
+        button.textContent = x.feature.properties.name;
+        button.onclick = () => {
+          setMenuOpen(false);
+          map.setView(x.layer.getLatLng(), 15);
+          selectStation(x.feature, x.layer);
+        };
+        results.appendChild(button);
+      });
+    });
+
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));
+    }
+  </script>
+</body>
+</html>

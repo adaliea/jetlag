@@ -1,0 +1,16 @@
+{
+  "name": "State College town + campus",
+  "status": "draft-for-map-review",
+  "selection_note": "Each reference day includes every GTFS boarding stop with scheduled service during the play window, no recorded closure, and its complete 400 m circle inside the boundary. Nearby and opposite-direction stops remain separate centers. No center-count or headway cap. Access requires game-day checking.",
+  "boundary_file": "data/boundary-streets.geojson",
+  "comparison": {
+    "boundary_file": "data/boundary-streets-44.geojson",
+    "station_count": 44,
+    "restored_stop_ids": [
+      "411",
+      "409",
+      "516"
+    ]
+  },
+  "selection": "all-eligible-stops-by-day"
+}

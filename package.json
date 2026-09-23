@@ -1,14 +1,20 @@
 {
-  "name": "jetlag-la",
+  "name": "jetlag",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "python3 scripts/build_map.py",
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy",
-    "deploy:refresh": "npm run build && wrangler deploy"
+    "build": "python3 scripts/build_site.py",
+    "build:la": "python3 locations/la/scripts/build_map.py && npm run build",
+    "build:state-college": ".venv/bin/python locations/state-college/scripts/build_map.py && npm run build",
+    "refresh:state-college": "python3 locations/state-college/scripts/refresh_data.py",
+    "setup:python": "python3 -m venv --without-pip .venv && python3 -m pip --python .venv install -r requirements.txt",
+    "test": "node --test tests/*.test.mjs && .venv/bin/python -m unittest discover -s locations/state-college/tests -v",
+    "dev": "npm run build && wrangler dev",
+    "preview": "npm run build && python3 -m http.server 5174 --directory dist",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:la-redirect": "wrangler deploy --config deploy/la-redirect.toml"
   },
   "devDependencies": {
-    "wrangler": "^4.0.0"
+    "wrangler": "^4.137.0"
   }
 }

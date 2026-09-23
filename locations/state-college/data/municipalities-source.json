@@ -1,0 +1,12 @@
+{
+  "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Current/MapServer/22/query?where=STATE%3D%2742%27+AND+COUNTY%3D%27027%27&outFields=NAME%2CGEOID&outSR=4326&f=geojson",
+  "downloaded": "2026-09-19",
+  "vintage": "2026-01-01",
+  "names": [
+    "College township",
+    "Ferguson township",
+    "Harris township",
+    "Patton township",
+    "State College borough"
+  ]
+}

@@ -1,0 +1,429 @@
+day,reference_date,stop_id,stop,municipality,eligible_center,available_boarding_in_game,exclusion_reasons,scheduled_routes,departures,first_departure,last_departure,max_gap_minutes,latitude,longitude
+saturday,2026-10-03,110,1001 University Dr,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79707,-77.84353
+saturday,2026-10-03,725,123 Rolling Ridge Dr,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78603,-77.82922
+saturday,2026-10-03,720,1245 S Atherton St (Happy Vly Motor Inn),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78454,-77.84717
+saturday,2026-10-03,624,1290 Circleville Rd,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.796614,-77.891114
+saturday,2026-10-03,625,1381 Circleville Road,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.796605,-77.89153
+saturday,2026-10-03,295,1400 W College Ave,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78305,-77.876
+saturday,2026-10-03,294,1445 W College Ave,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78304,-77.87624
+saturday,2026-10-03,297,1506 W College Ave,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78138,-77.87795
+saturday,2026-10-03,722,1550 S Atherton St (Courtyd by Marriott),State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78512,-77.83755
+saturday,2026-10-03,849,1610 West College Ave (Waffle Shop),Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78005,-77.879478
+saturday,2026-10-03,348,200 Elmwood St,College township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.8103,-77.828735
+saturday,2026-10-03,349,201 Elmwood St,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.810395,-77.828365
+saturday,2026-10-03,719,234 Easterly Pkwy (Easterly Pkwy Elem),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78909,-77.84795
+saturday,2026-10-03,254,240 Toftrees Ave (Turtle Creek Apts),Patton township,False,True,The full 400 m circle crosses the game border.,H,12,10:20,17:40,40,40.82294,-77.89859
+saturday,2026-10-03,328,2601 E College Ave,College township,False,False,Stop is outside the game border.,CC,18,10:16,17:55,27,40.82755,-77.8075
+saturday,2026-10-03,552,300 Science Park Rd (PSU Tech Support),Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.775885,-77.89383
+saturday,2026-10-03,551,301 Science Park Rd (ARL West IV),Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77604,-77.89375
+saturday,2026-10-03,255,301 Toftrees Ave,Patton township,False,False,Stop is outside the game border.,H,12,10:35,17:55,40,40.82333,-77.89657
+saturday,2026-10-03,768,3054 Enterprise Drive,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.764853,-77.880884
+saturday,2026-10-03,313,3075 Enterprise Drive,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.764918,-77.880799
+saturday,2026-10-03,716,323 Easterly Pkwy,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79251,-77.84632
+saturday,2026-10-03,258,350 Toftrees Ave (Turtle Creek Apts),Patton township,False,True,The full 400 m circle crosses the game border.,H,12,10:21,17:41,40,40.82376,-77.89366
+saturday,2026-10-03,257,359 Toftrees Ave (Parkgate Apartments),Patton township,False,False,Stop is outside the game border.,H,12,10:35,17:55,40,40.82387,-77.89377
+saturday,2026-10-03,553,385 Science Park Rd at Accuweather,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78022,-77.897665
+saturday,2026-10-03,554,500 Science Park Rd at Davita,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78008,-77.897735
+saturday,2026-10-03,339,537 Pike St,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.813755,-77.818945
+saturday,2026-10-03,264,541 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.,H,12,10:33,17:53,40,40.82854,-77.88868
+saturday,2026-10-03,338,542 Pike St,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81369,-77.81913
+saturday,2026-10-03,345,700 Elmwood St,College township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.810035,-77.82152
+saturday,2026-10-03,265,711 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.,H,12,10:33,17:53,40,40.8299,-77.88697
+saturday,2026-10-03,270,910 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.,H,12,10:24,17:44,40,40.83215,-77.88363
+saturday,2026-10-03,461,Amblewood Way at School Drive,Patton township,False,True,The full 400 m circle crosses the game border.,AC,16,10:03,17:33,30,40.80801,-77.92313
+saturday,2026-10-03,745,Benner Pike at Barnes and Noble,College township,False,False,Stop is outside the game border.,CC,18,10:15,17:54,27,40.830262,-77.805062
+saturday,2026-10-03,426,Blue Course Dr at Blue Course Commons,Ferguson township,False,True,The full 400 m circle crosses the game border.,W,10,10:18,17:25,56,40.79873,-77.88692
+saturday,2026-10-03,780,Blue Course Dr at Blue Course Med Ctr,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7830774546,-77.886221227
+saturday,2026-10-03,425,Blue Course Dr near Teaberry Lane,Ferguson township,False,True,The full 400 m circle crosses the game border.,W,10,10:37,17:44,54,40.7972149974,-77.887763356
+saturday,2026-10-03,848,Blue Course Dr near West College Ave,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.780132,-77.880513
+saturday,2026-10-03,868,Blue Course Drive at Stratford Drive,State College borough,False,True,The full 400 m circle crosses the game border.,R,14,10:31,17:48,42,40.770826,-77.862051
+saturday,2026-10-03,467,Carnegie Dr at Vista Lofts,Patton township,False,True,The full 400 m circle crosses the game border.,AC,16,10:01,17:31,30,40.808695,-77.925545
+saturday,2026-10-03,315,Cato Ave at Enterprise Dr,Ferguson township,False,False,Stop is outside the game border.,R,14,10:14,17:33,43,40.763426,-77.879482
+saturday,2026-10-03,316,Cato Ave at Research Dr,Ferguson township,False,False,Stop is outside the game border.,R,14,10:14,17:33,43,40.764255,-77.878063
+saturday,2026-10-03,708,Circleville Rd at E Park Hills Ave,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.795825,-77.894725
+saturday,2026-10-03,433,Circleville Rd at Farmstead Lane Inbound,Ferguson township,False,False,Stop is outside the game border.,W,10,10:31,17:38,54,40.79039,-77.90334
+saturday,2026-10-03,434,Circleville Rd at Farmstead Ln Outbound,Ferguson township,False,True,The full 400 m circle crosses the game border.,W,10,10:25,17:32,56,40.7904,-77.903655
+saturday,2026-10-03,682,Circleville Rd at Knob Hill Pl,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.795807,-77.894318
+saturday,2026-10-03,703,Circleville Rd at W Park Hills Ave,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.79356,-77.897335
+saturday,2026-10-03,711,Circleville Rd opposite W Park Hills Ave,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.793385,-77.897445
+saturday,2026-10-03,268,Cricklewood Dr at Cricklewood Apts,Patton township,False,False,Stop is outside the game border.,H,12,10:23,17:43,40,40.8310693453,-77.8858232068
+saturday,2026-10-03,275,Cricklewood Dr at Cricklewood Circle,Patton township,False,False,Stop is outside the game border.,H,12,10:22,17:42,40,40.82851,-77.88851
+saturday,2026-10-03,260,Cricklewood Dr at N Barkway Lane,Patton township,False,False,Stop is outside the game border.,H,12,10:34,17:54,40,40.825807,-77.893102
+saturday,2026-10-03,261,Cricklewood Dr at S Barkway Lane,Patton township,False,False,Stop is outside the game border.,H,12,10:21,17:41,40,40.82563,-77.89289
+saturday,2026-10-03,263,Cricklewood Dr at Wilts Lane Inbound,Patton township,False,False,Stop is outside the game border.,H,12,10:22,17:42,40,40.82763,-77.89081
+saturday,2026-10-03,262,Cricklewood Dr at Wilts Lane Outbound,Patton township,False,False,Stop is outside the game border.,H,12,10:33,17:53,40,40.82773,-77.89093
+saturday,2026-10-03,267,Cricklewood Dr at the American Ale House,Patton township,False,False,Stop is outside the game border.,H,12,10:32,17:52,40,40.8311758757,-77.885944373
+saturday,2026-10-03,50,Cville Rd_Red Oak Ln,Ferguson township,False,False,Stop is outside the game border.,W,10,10:28,17:35,54,40.791078072,-77.9100561276
+saturday,2026-10-03,169,E College Av at Hickeys,College township,False,False,Stop is outside the game border.,CC,17,10:21,17:33,27,40.809801,-77.832697
+saturday,2026-10-03,333,E College Ave at Limerock Terrace,College township,False,False,Stop is outside the game border.,CC,17,10:22,17:34,27,40.821935,-77.81436
+saturday,2026-10-03,331,E College Ave at Nittany Commons,College township,False,False,Stop is outside the game border.,CC,17,10:22,17:34,27,40.823815,-77.811955
+saturday,2026-10-03,170,E College Ave at Puddintown Rd,College township,False,True,The full 400 m circle crosses the game border.,CC,17,10:22,17:34,27,40.8081,-77.83629
+saturday,2026-10-03,162,E College Ave at Squirrel Dr Outbound,College township,False,True,The full 400 m circle crosses the game border.,CC,18,10:17,17:56,27,40.8091603812,-77.8334900883
+saturday,2026-10-03,330,E College Ave at Struble Rd,College township,False,False,Stop is outside the game border.,CC,17,10:23,17:35,27,40.826185,-77.80892
+saturday,2026-10-03,161,E College Ave at Your Building Center,College township,False,False,CATA reports E College Ave at Your Building Center closed due to construction.; The full 400 m circle crosses the game border.,CC,18,10:16,17:55,27,40.8078,-77.83627
+saturday,2026-10-03,332,E College Ave opp Nittany Commons,College township,False,False,Stop is outside the game border.,CC,18,10:17,17:56,27,40.82398,-77.812195
+saturday,2026-10-03,874,EES Building EB,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7933165657,-77.8707751248
+saturday,2026-10-03,572,EES Building WB,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7936316695,-77.8705748893
+saturday,2026-10-03,809,East College Ave at Citi Clean,College township,False,False,Stop is outside the game border.,CC,18,10:17,17:56,27,40.82205,-77.8146
+saturday,2026-10-03,753,East College Ave at Green Acres Lane,College township,False,False,Stop is outside the game border.,CC,18,10:20,17:59,27,40.8147896404,-77.8241847202
+saturday,2026-10-03,754,East College Avenue at Grandview Road,College township,False,False,Stop is outside the game border.,CC,18,10:19,17:58,27,40.8145453447,-77.8243468221
+saturday,2026-10-03,1011,East Marylyn Ave at Foxdale Village,State College borough,False,True,The full 400 m circle crosses the game border.,AC,16,10:09,17:39,30,40.7837559051,-77.838702066
+saturday,2026-10-03,718,Easterly Pkwy at Garner St,State College borough,False,False,CATA reports Easterly Parkway at Garner St closed for construction.; No scheduled boarding in this day's reference window.,,0,,,,40.79251,-77.84617
+saturday,2026-10-03,384,Easterly Pkwy at Manorway Apts,State College borough,False,False,CATA reports Easterly Parkway at Manorway Apts closed for construction.; No scheduled boarding in this day's reference window.,,0,,,,40.7948970702,-77.8440797669
+saturday,2026-10-03,2004,Easterly Pkwy at S Pugh St,State College borough,False,False,CATA reports Easterly Parkway at S Pugh St closed for construction.; No scheduled boarding in this day's reference window.,,0,,,,40.7880514782,-77.8492954161
+saturday,2026-10-03,346,Elmwood St at Clover Rd,College township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81017,-77.82475
+saturday,2026-10-03,344,Elmwood St at Elm St,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81013,-77.822075
+saturday,2026-10-03,347,Elmwood St at Hillview Ave,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.810285,-77.824555
+saturday,2026-10-03,310,Enterprise Dr at Bristol Ave,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.766301,-77.882222
+saturday,2026-10-03,314,Enterprise Dr at Cato Ave,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.763661,-77.879674
+saturday,2026-10-03,277,Fox Hollow Rd at Orchard Rd Inbound,College township,False,True,The full 400 m circle crosses the game border.,H,12,10:32,17:52,40,40.81815,-77.85952
+saturday,2026-10-03,278,Fox Hollow Rd at Orchard Rd Outbound,College township,False,False,Stop is outside the game border.,H,12,10:22,17:42,40,40.81801,-77.859
+saturday,2026-10-03,788,Fox Hollow at Big Hollow,College township,False,True,The full 400 m circle crosses the game border.,H,12,10:31,17:51,40,40.822512,-77.867386
+saturday,2026-10-03,789,Fox Hollow opp Big Hollow,College township,False,False,Stop is outside the game border.,H,12,10:23,17:43,40,40.822721,-77.867395
+saturday,2026-10-03,464,Galen Dr at Amblewood Way,Patton township,False,True,The full 400 m circle crosses the game border.,AC,16,10:02,17:32,30,40.80556,-77.92431
+saturday,2026-10-03,459,Galen Drive at Kenley Ct,Patton township,False,True,The full 400 m circle crosses the game border.,AC,16,10:03,17:33,30,40.809764,-77.921637
+saturday,2026-10-03,393,Geisinger Medical Center at Scenery Park,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78492,-77.82018
+saturday,2026-10-03,1002,Gerald St at Julian Dr,College township,False,False,Stop is outside the game border.,CC,18,10:10,17:49,27,40.8321269637,-77.8126962743
+saturday,2026-10-03,147,Gerald St at Matthew Circle Outbound,College township,False,False,Stop is outside the game border.,CC,18,10:10,17:49,27,40.83268,-77.81384
+saturday,2026-10-03,2010,Happy Valley Casino,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.831632230125344,-77.80230910267949
+saturday,2026-10-03,428,Havershire Blvd. across from The Heights,Ferguson township,False,False,Stop is outside the game border.,W,10,10:22,17:29,56,40.788954,-77.895099
+saturday,2026-10-03,429,Havershire Blvd. at Northwick (Inbound),Ferguson township,False,False,Stop is outside the game border.,W,10,10:33,17:40,54,40.790708,-77.898045
+saturday,2026-10-03,430,Havershire Blvd. at Northwick (Outbound),Ferguson township,False,False,Stop is outside the game border.,W,10,10:23,17:30,56,40.790834,-77.898015
+saturday,2026-10-03,427,Havershire Blvd. at The Heights,Ferguson township,False,False,Stop is outside the game border.,W,10,10:34,17:41,54,40.788789,-77.894889
+saturday,2026-10-03,776,Martin St at Best Buy,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.8067577974,-77.8953058155
+saturday,2026-10-03,471,N Atherton St at Douglas Dr,Patton township,False,False,CATA reports North Atherton St at Douglas Dr closed for construction; use stop 473 at Fairwood Lane.,AC,16,10:05,17:35,30,40.810132,-77.914486
+saturday,2026-10-03,320,Nittany Mall (Aldi),College township,False,False,Stop is outside the game border.,CC,18,10:04,17:43,27,40.8344077701,-77.8015204921
+saturday,2026-10-03,165,Nittany Mall Main Entrance,College township,False,False,Stop is outside the game border.,CC,36,10:00,17:43,23,40.83367,-77.80072
+saturday,2026-10-03,778,Oakwood Ave at Clearview Ave,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.8163303897,-77.8910775517
+saturday,2026-10-03,824,Oakwood Ave at SC Collective Oakwood,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.816508,-77.89056
+saturday,2026-10-03,840,Old Gatesburg Rd at Blue Course Med. Ctr,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.781939,-77.887386
+saturday,2026-10-03,839,Opposite 225 Science Park Rd (ARL Bldg),Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77478,-77.892122
+saturday,2026-10-03,253,Opposite 240 Toftrees Ave,Patton township,False,False,Stop is outside the game border.,H,12,10:36,17:56,40,40.823074,-77.898646
+saturday,2026-10-03,256,Opposite 301 Toftrees Ave,Patton township,False,True,The full 400 m circle crosses the game border.,H,12,10:20,17:40,40,40.82323,-77.89653
+saturday,2026-10-03,312,Opposite 3035 Enterprise Dr,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.765908,-77.881962
+saturday,2026-10-03,389,Opposite 383 Rolling Ridge Dr,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7867,-77.82655
+saturday,2026-10-03,724,Opposite 428 Windmere Dr,College township,False,False,Stop is outside the game border.,AC,16,10:14,17:44,30,40.78795,-77.82626
+saturday,2026-10-03,723,Opposite 474 Windmere Dr,College township,False,False,Stop is outside the game border.,AC,16,10:14,17:44,30,40.78803,-77.82317
+saturday,2026-10-03,390,Opposite 501 Rolling Ridge Dr,College township,False,False,Stop is outside the game border.,AC,16,10:13,17:43,30,40.78617,-77.82353
+saturday,2026-10-03,266,Opposite 711 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.,H,12,10:23,17:43,40,40.82972,-77.887
+saturday,2026-10-03,269,Opposite 910 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.,H,12,10:32,17:52,40,40.83227,-77.88379
+saturday,2026-10-03,341,Pike St at Dale St Inbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81136,-77.8184
+saturday,2026-10-03,340,Pike St at Dale St Outbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81123,-77.818285
+saturday,2026-10-03,336,Pike St at Hickory Lane,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81504,-77.81889
+saturday,2026-10-03,334,Pike St at Limerock Terrace Inbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.817235,-77.818465
+saturday,2026-10-03,335,Pike St at Limerock Terrace Outbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81723,-77.818315
+saturday,2026-10-03,342,Pike St at Mary St Inbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.80983,-77.818755
+saturday,2026-10-03,343,Pike St at Mary St Outbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.809485,-77.81874
+saturday,2026-10-03,337,Pike St at Rishel Lane,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81495,-77.8187
+saturday,2026-10-03,569,Porter Rd at Medlar Field,College township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.811206,-77.852586
+saturday,2026-10-03,400,Research Drive at CATA,Ferguson township,False,False,Stop is outside the game border.,R,28,10:15,17:44,29,40.762135,-77.875632
+saturday,2026-10-03,388,Rolling Ridge Dr at Hills Plaza South,College township,False,False,Stop is outside the game border.,AC,16,10:12,17:42,30,40.78571,-77.82915
+saturday,2026-10-03,386,Rolling Ridge Drive at Hills Plaza,College township,False,False,Stop is outside the game border.,AC,32,10:15,17:48,27,40.786432,-77.829181
+saturday,2026-10-03,164,Ross/Harbor Freight,College township,False,False,Stop is outside the game border.,CC,18,10:14,17:53,27,40.8314294403,-77.8066180847
+saturday,2026-10-03,2003,S Allen St near Riviera Apts,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7858135788,-77.8488734524
+saturday,2026-10-03,157,S Atherton St at E Branch Rd,State College borough,False,True,The full 400 m circle crosses the game border.,AC,16,10:19,17:49,30,40.7853275061,-77.8350426822
+saturday,2026-10-03,382,S Atherton St at Science St,State College borough,False,True,The full 400 m circle crosses the game border.,AC,16,10:20,17:50,30,40.78522,-77.83857
+saturday,2026-10-03,880,Sams Club,College township,False,False,Stop is outside the game border.,CC,18,10:13,17:52,27,40.833169,-77.805413
+saturday,2026-10-03,549,Science Park Rd at Pine Hall Rd,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77375,-77.88931
+saturday,2026-10-03,557,Science Park Rd at Sandy Dr (Wonderland),Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.784855,-77.902385
+saturday,2026-10-03,779,Science Park Rd at Sandy Dr near CVIM,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7849344347,-77.9022377197
+saturday,2026-10-03,550,Science Park Rd at Torron Group,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77381,-77.88997
+saturday,2026-10-03,813,Science Park Rd at the ARL Building,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.774961,-77.892075
+saturday,2026-10-03,1013,Science St. at the Ramada,State College borough,False,True,The full 400 m circle crosses the game border.,AC,16,10:09,17:39,30,40.7845635835,-77.8387070451
+saturday,2026-10-03,321,Shiloh Rd at Premier Dr,College township,False,False,Stop is outside the game border.,CC,18,10:06,17:45,27,40.8381401156,-77.8032334087
+saturday,2026-10-03,156,South Atherton at Creekside Plaza,State College borough,False,True,The full 400 m circle crosses the game border.,AC,16,10:10,17:40,30,40.785124,-77.834581
+saturday,2026-10-03,414,Southgate Dr at Ashwicken Ct,State College borough,False,True,The full 400 m circle crosses the game border.,R,15,10:01,17:50,42,40.773145,-77.862115
+saturday,2026-10-03,415,Southgate Dr at Blue Course Dr,State College borough,False,True,The full 400 m circle crosses the game border.,R,15,10:00,17:49,42,40.77199,-77.86386
+saturday,2026-10-03,416,Stratford Dr at Blue Course Dr,State College borough,False,True,The full 400 m circle crosses the game border.,R,15,10:08,17:58,43,40.77107,-77.86208
+saturday,2026-10-03,417,Stratford Dr at High Point Skatepark,State College borough,False,True,The full 400 m circle crosses the game border.,R,15,10:07,17:58,43,40.77267,-77.85977
+saturday,2026-10-03,867,The Yards at Old State,Ferguson township,False,True,The full 400 m circle crosses the game border.,R,28,10:09,17:47,25,40.7677268597,-77.8590667116
+saturday,2026-10-03,1001,Thon Dr.,State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7711312655,-77.856812147
+saturday,2026-10-03,319,Toftrees Ave at Hillside and Fox Run,Patton township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.823697,-77.89174
+saturday,2026-10-03,9,Toftrees Ave at The Station,Patton township,False,False,Stop is outside the game border.,H,12,10:27,17:47,40,40.824063329,-77.8865689067
+saturday,2026-10-03,251,Toftrees Ave at The View,Patton township,False,True,The full 400 m circle crosses the game border.,H,24,10:28,17:49,39,40.8231888366,-77.8838663031
+saturday,2026-10-03,326,Toftrees Ave at Wildridge Apts.,Patton township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.823629,-77.889463
+saturday,2026-10-03,701,Toftrees Avenue near Alma Mater Drive,Patton township,False,True,The full 400 m circle crosses the game border.,H,24,10:29,17:50,39,40.826011,-77.880228
+saturday,2026-10-03,700,Toftrees Avenue near Beaumanor Drive,Patton township,False,False,Stop is outside the game border.,H,12,10:26,17:46,40,40.825921,-77.880501
+saturday,2026-10-03,362,Trout Road at Centre County PAWS,College township,False,False,Stop is outside the game border.,CC,18,10:08,17:47,27,40.8361392415,-77.8104664085
+saturday,2026-10-03,118,Trout Road at Pleasant Pointe,College township,False,False,Stop is outside the game border.,CC,18,10:07,17:46,27,40.8380517745,-77.8074014319
+saturday,2026-10-03,112,University Dr at Bellaire Ave (Inbound),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79901,-77.84756
+saturday,2026-10-03,56,University Dr at Bellaire Ave (Outbound),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79896,-77.84765
+saturday,2026-10-03,111,University Dr at E. Waring Ave (SSA Offi,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79775,-77.84527
+saturday,2026-10-03,57,University Dr at E. Waring Ave(Outbound),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79759,-77.84519
+saturday,2026-10-03,58,University Dr at Easterly Pkwy,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79657,-77.84311
+saturday,2026-10-03,726,University Drive at Jordan Center Gate A,College township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.807923,-77.856874
+saturday,2026-10-03,435,Valley Vista Dr at SC Collective Farmstead,Ferguson township,False,True,The full 400 m circle crosses the game border.,W,14,10:26,17:33,54,40.790771,-77.90773
+saturday,2026-10-03,470,Valley Vista Drive at Lowes Center,Patton township,False,False,Stop is outside the game border.,AC,16,10:00,17:30,30,40.810817,-77.923776
+saturday,2026-10-03,882,Villas at Happy Valley,College township,False,False,Stop is outside the game border.,CC,18,10:11,17:50,27,40.834051,-77.809978
+saturday,2026-10-03,307,W College Ave at Bristol Ave Inbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.76634,-77.884325
+saturday,2026-10-03,308,W College Ave at Bristol Ave Outbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.766435,-77.884675
+saturday,2026-10-03,291,W College Ave at Buckhout St (Haus),Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7869,-77.8714
+saturday,2026-10-03,305,W College Ave at Chelsea Lane Inbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.76809,-77.88609
+saturday,2026-10-03,306,W College Ave at Chelsea Lane Outbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.76831,-77.88657
+saturday,2026-10-03,304,W College Ave at Holly Circle Inbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.770745,-77.887405
+saturday,2026-10-03,538,W College Ave at Holly Circle Outbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.769975,-77.887415
+saturday,2026-10-03,293,W College Ave at Hoy St,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78462,-77.87416
+saturday,2026-10-03,290,W College Ave at N Butz St,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78683,-77.8717
+saturday,2026-10-03,296,W College Ave near Centre Animal Hospita,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78158,-77.87802
+saturday,2026-10-03,292,W College Ave near Corl St,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.784549,-77.874434
+saturday,2026-10-03,212,W Whitehall Road at CATA,Ferguson township,False,False,Stop is outside the game border.,R,14,10:13,17:32,43,40.761013,-77.87622
+saturday,2026-10-03,777,Waddle Rd at the Bryn,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.8106895168,-77.8941471146
+saturday,2026-10-03,163,Walmart - Inbound,College township,False,False,Stop is outside the game border.,CC,18,10:13,17:52,27,40.8324222055,-77.8059515423
+saturday,2026-10-03,732,Waupelani Dr. at Briarwood Apts,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.773922,-77.855912
+saturday,2026-10-03,873,West Deck,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7915728027,-77.8721259711
+saturday,2026-10-03,6,West Park Ave at North Burrowes St,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79845,-77.8711
+saturday,2026-10-03,2001,Westerly Pkwy at Plaza Dr,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7828788715,-77.854111069
+saturday,2026-10-03,391,Windmere Dr at Wellington Dr,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7874677239,-77.82171866
+saturday,2026-10-03,935,Windmere Drive at Scenery Court,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.787733,-77.821953
+saturday,2026-10-03,755,Woodledge Dr Inbound (To Campus),Patton township,False,False,Stop is outside the game border.,H,12,10:25,17:45,40,40.82757,-77.88127
+saturday,2026-10-03,756,Woodledge Dr Outbound (To Toftrees),Patton township,False,False,Stop is outside the game border.,H,12,10:31,17:51,40,40.82764,-77.88104
+saturday,2026-10-03,832,Woodledge Dr at Woodledge Circle,Patton township,False,False,Stop is outside the game border.,H,12,10:24,17:44,40,40.831299,-77.882255
+saturday,2026-10-03,833,Woodledge Dr opposite Woodledge Circle,Patton township,False,False,Stop is outside the game border.,H,12,10:32,17:52,40,40.831383,-77.882178
+saturday,2026-10-03,844,Woodledge Dr opposite Woodledge Circle,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.831383,-77.882178
+sunday,2026-10-04,110,1001 University Dr,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79707,-77.84353
+sunday,2026-10-04,372,1006 S Pugh St,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.788983,-77.849408
+sunday,2026-10-04,39,1100 W Aaron Dr at SC Collective,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.80188,-77.898979
+sunday,2026-10-04,375,1218 S Allen St,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7855,-77.8488
+sunday,2026-10-04,46,1224 N Atherton St - Discovery Space,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.802467,-77.882167
+sunday,2026-10-04,725,123 Rolling Ridge Dr,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78603,-77.82922
+sunday,2026-10-04,720,1245 S Atherton St (Happy Vly Motor Inn),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78454,-77.84717
+sunday,2026-10-04,624,1290 Circleville Rd,Ferguson township,False,False,Stop is outside the game border.,NV,16,10:10,17:40,30,40.796614,-77.891114
+sunday,2026-10-04,379,1306 S Atherton St,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78435,-77.84432
+sunday,2026-10-04,625,1381 Circleville Road,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.796605,-77.89153
+sunday,2026-10-04,479,1400 Martin St at Parkcrest Terrace,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.802948,-77.888809
+sunday,2026-10-04,295,1400 W College Ave,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78305,-77.876
+sunday,2026-10-04,523,1450 N Atherton St at Hoss,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.806141,-77.889069
+sunday,2026-10-04,297,1506 W College Ave,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78138,-77.87795
+sunday,2026-10-04,722,1550 S Atherton St (Courtyd by Marriott),State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78512,-77.83755
+sunday,2026-10-04,849,1610 West College Ave (Waffle Shop),Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78005,-77.879478
+sunday,2026-10-04,498,1870 North Atherton Street,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.8089272498,-77.9040936651
+sunday,2026-10-04,348,200 Elmwood St,College township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.8103,-77.828735
+sunday,2026-10-04,349,201 Elmwood St,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.810395,-77.828365
+sunday,2026-10-04,719,234 Easterly Pkwy (Easterly Pkwy Elem),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78909,-77.84795
+sunday,2026-10-04,364,240 S Pugh St (oLiv Highland),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79357,-77.85781
+sunday,2026-10-04,254,240 Toftrees Ave (Turtle Creek Apts),Patton township,False,True,The full 400 m circle crosses the game border.,NV,16,10:29,17:59,30,40.82294,-77.89859
+sunday,2026-10-04,328,2601 E College Ave,College township,False,False,Stop is outside the game border.,CC,16,10:12,17:42,30,40.82755,-77.8075
+sunday,2026-10-04,552,300 Science Park Rd (PSU Tech Support),Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.775885,-77.89383
+sunday,2026-10-04,551,301 Science Park Rd (ARL West IV),Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77604,-77.89375
+sunday,2026-10-04,255,301 Toftrees Ave,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82333,-77.89657
+sunday,2026-10-04,768,3054 Enterprise Drive,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.764853,-77.880884
+sunday,2026-10-04,313,3075 Enterprise Drive,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.764918,-77.880799
+sunday,2026-10-04,716,323 Easterly Pkwy,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79251,-77.84632
+sunday,2026-10-04,258,350 Toftrees Ave (Turtle Creek Apts),Patton township,False,True,The full 400 m circle crosses the game border.,NV,16,10:00,17:30,30,40.82376,-77.89366
+sunday,2026-10-04,257,359 Toftrees Ave (Parkgate Apartments),Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82387,-77.89377
+sunday,2026-10-04,553,385 Science Park Rd at Accuweather,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78022,-77.897665
+sunday,2026-10-04,554,500 Science Park Rd at Davita,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78008,-77.897735
+sunday,2026-10-04,339,537 Pike St,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.813755,-77.818945
+sunday,2026-10-04,264,541 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82854,-77.88868
+sunday,2026-10-04,338,542 Pike St,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81369,-77.81913
+sunday,2026-10-04,715,545 Oakwood Ave at SC Collective Oakwood,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.81736,-77.88919
+sunday,2026-10-04,502,658 Oakwood Ave,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.81908,-77.88955
+sunday,2026-10-04,345,700 Elmwood St,College township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.810035,-77.82152
+sunday,2026-10-04,265,711 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.8299,-77.88697
+sunday,2026-10-04,40,720 W Aaron Dr at Aaron Village,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.804222,-77.895844
+sunday,2026-10-04,399,805 S Atherton St,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78604,-77.855255
+sunday,2026-10-04,270,910 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.83215,-77.88363
+sunday,2026-10-04,709,972 Oakwood Ave,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.818123,-77.896378
+sunday,2026-10-04,461,Amblewood Way at School Drive,Patton township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.80801,-77.92313
+sunday,2026-10-04,280,Athletic Administration Building,College township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.81384,-77.85526
+sunday,2026-10-04,745,Benner Pike at Barnes and Noble,College township,False,False,Stop is outside the game border.,CC,16,10:11,17:41,30,40.830262,-77.805062
+sunday,2026-10-04,426,Blue Course Dr at Blue Course Commons,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.79873,-77.88692
+sunday,2026-10-04,780,Blue Course Dr at Blue Course Med Ctr,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7830774546,-77.886221227
+sunday,2026-10-04,422,Blue Course Dr at Chase Bank,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.803059,-77.884857
+sunday,2026-10-04,425,Blue Course Dr near Teaberry Lane,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7972149974,-77.887763356
+sunday,2026-10-04,848,Blue Course Dr near West College Ave,Ferguson township,False,True,The full 400 m circle crosses the game border.,NV,16,10:04,17:34,30,40.780132,-77.880513
+sunday,2026-10-04,868,Blue Course Drive at Stratford Drive,State College borough,False,True,The full 400 m circle crosses the game border.,RP,14,10:22,17:57,35,40.770826,-77.862051
+sunday,2026-10-04,467,Carnegie Dr at Vista Lofts,Patton township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.808695,-77.925545
+sunday,2026-10-04,315,Cato Ave at Enterprise Dr,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.763426,-77.879482
+sunday,2026-10-04,316,Cato Ave at Research Dr,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.764255,-77.878063
+sunday,2026-10-04,708,Circleville Rd at E Park Hills Ave,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.795825,-77.894725
+sunday,2026-10-04,433,Circleville Rd at Farmstead Lane Inbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.79039,-77.90334
+sunday,2026-10-04,434,Circleville Rd at Farmstead Ln Outbound,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7904,-77.903655
+sunday,2026-10-04,682,Circleville Rd at Knob Hill Pl,Ferguson township,False,False,Stop is outside the game border.,NV,16,10:10,17:40,30,40.795807,-77.894318
+sunday,2026-10-04,703,Circleville Rd at W Park Hills Ave,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.79356,-77.897335
+sunday,2026-10-04,711,Circleville Rd opposite W Park Hills Ave,Ferguson township,False,False,Stop is outside the game border.,NV,16,10:09,17:39,30,40.793385,-77.897445
+sunday,2026-10-04,252,Colonnade Blvd Opposite Kohls,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.814682,-77.902018
+sunday,2026-10-04,475,Colonnade Blvd at Chicos,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.810512,-77.906824
+sunday,2026-10-04,249,Colonnade Blvd at Home Goods,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.8116210301,-77.9053267755
+sunday,2026-10-04,761,Colonnade Blvd at Kohls,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.814663,-77.902489
+sunday,2026-10-04,250,Colonnade Blvd at Target,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.811734,-77.905593
+sunday,2026-10-04,476,Colonnade Blvd at Wegmans,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.810703,-77.906905
+sunday,2026-10-04,268,Cricklewood Dr at Cricklewood Apts,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.8310693453,-77.8858232068
+sunday,2026-10-04,275,Cricklewood Dr at Cricklewood Circle,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82851,-77.88851
+sunday,2026-10-04,260,Cricklewood Dr at N Barkway Lane,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.825807,-77.893102
+sunday,2026-10-04,261,Cricklewood Dr at S Barkway Lane,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82563,-77.89289
+sunday,2026-10-04,263,Cricklewood Dr at Wilts Lane Inbound,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82763,-77.89081
+sunday,2026-10-04,262,Cricklewood Dr at Wilts Lane Outbound,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82773,-77.89093
+sunday,2026-10-04,267,Cricklewood Dr at the American Ale House,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.8311758757,-77.885944373
+sunday,2026-10-04,50,Cville Rd_Red Oak Ln,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.791078072,-77.9100561276
+sunday,2026-10-04,169,E College Av at Hickeys,College township,False,False,Stop is outside the game border.,CC,16,10:17,17:47,30,40.809801,-77.832697
+sunday,2026-10-04,333,E College Ave at Limerock Terrace,College township,False,False,Stop is outside the game border.,CC,16,10:19,17:49,30,40.821935,-77.81436
+sunday,2026-10-04,331,E College Ave at Nittany Commons,College township,False,False,Stop is outside the game border.,CC,16,10:19,17:49,30,40.823815,-77.811955
+sunday,2026-10-04,170,E College Ave at Puddintown Rd,College township,False,True,The full 400 m circle crosses the game border.,CC,16,10:18,17:48,30,40.8081,-77.83629
+sunday,2026-10-04,162,E College Ave at Squirrel Dr Outbound,College township,False,True,The full 400 m circle crosses the game border.,CC,16,10:14,17:44,30,40.8091603812,-77.8334900883
+sunday,2026-10-04,330,E College Ave at Struble Rd,College township,False,False,Stop is outside the game border.,CC,16,10:20,17:50,30,40.826185,-77.80892
+sunday,2026-10-04,161,E College Ave at Your Building Center,College township,False,False,CATA reports E College Ave at Your Building Center closed due to construction.; The full 400 m circle crosses the game border.,CC,16,10:13,17:43,30,40.8078,-77.83627
+sunday,2026-10-04,332,E College Ave opp Nittany Commons,College township,False,False,Stop is outside the game border.,CC,16,10:13,17:43,30,40.82398,-77.812195
+sunday,2026-10-04,874,EES Building EB,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7933165657,-77.8707751248
+sunday,2026-10-04,572,EES Building WB,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7936316695,-77.8705748893
+sunday,2026-10-04,809,East College Ave at Citi Clean,College township,False,False,Stop is outside the game border.,CC,16,10:13,17:43,30,40.82205,-77.8146
+sunday,2026-10-04,753,East College Ave at Green Acres Lane,College township,False,False,Stop is outside the game border.,CC,16,10:16,17:46,30,40.8147896404,-77.8241847202
+sunday,2026-10-04,754,East College Avenue at Grandview Road,College township,False,False,Stop is outside the game border.,CC,16,10:16,17:46,30,40.8145453447,-77.8243468221
+sunday,2026-10-04,1011,East Marylyn Ave at Foxdale Village,State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7837559051,-77.838702066
+sunday,2026-10-04,718,Easterly Pkwy at Garner St,State College borough,False,False,CATA reports Easterly Parkway at Garner St closed for construction.; No scheduled boarding in this day's reference window.,,0,,,,40.79251,-77.84617
+sunday,2026-10-04,384,Easterly Pkwy at Manorway Apts,State College borough,False,False,CATA reports Easterly Parkway at Manorway Apts closed for construction.; No scheduled boarding in this day's reference window.,,0,,,,40.7948970702,-77.8440797669
+sunday,2026-10-04,373,Easterly Pkwy at Old Boalsburg Rd,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78815,-77.8494
+sunday,2026-10-04,2004,Easterly Pkwy at S Pugh St,State College borough,False,False,CATA reports Easterly Parkway at S Pugh St closed for construction.; No scheduled boarding in this day's reference window.,,0,,,,40.7880514782,-77.8492954161
+sunday,2026-10-04,346,Elmwood St at Clover Rd,College township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81017,-77.82475
+sunday,2026-10-04,344,Elmwood St at Elm St,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81013,-77.822075
+sunday,2026-10-04,347,Elmwood St at Hillview Ave,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.810285,-77.824555
+sunday,2026-10-04,310,Enterprise Dr at Bristol Ave,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.766301,-77.882222
+sunday,2026-10-04,314,Enterprise Dr at Cato Ave,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.763661,-77.879674
+sunday,2026-10-04,277,Fox Hollow Rd at Orchard Rd Inbound,College township,False,True,The full 400 m circle crosses the game border.,NV,16,10:10,17:40,30,40.81815,-77.85952
+sunday,2026-10-04,278,Fox Hollow Rd at Orchard Rd Outbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81801,-77.859
+sunday,2026-10-04,788,Fox Hollow at Big Hollow,College township,False,True,The full 400 m circle crosses the game border.,NV,16,10:09,17:39,30,40.822512,-77.867386
+sunday,2026-10-04,789,Fox Hollow opp Big Hollow,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.822721,-77.867395
+sunday,2026-10-04,464,Galen Dr at Amblewood Way,Patton township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.80556,-77.92431
+sunday,2026-10-04,459,Galen Drive at Kenley Ct,Patton township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.809764,-77.921637
+sunday,2026-10-04,393,Geisinger Medical Center at Scenery Park,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78492,-77.82018
+sunday,2026-10-04,1002,Gerald St at Julian Dr,College township,False,False,Stop is outside the game border.,CC,16,10:06,17:36,30,40.8321269637,-77.8126962743
+sunday,2026-10-04,147,Gerald St at Matthew Circle Outbound,College township,False,False,Stop is outside the game border.,CC,16,10:06,17:36,30,40.83268,-77.81384
+sunday,2026-10-04,2010,Happy Valley Casino,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.831632230125344,-77.80230910267949
+sunday,2026-10-04,428,Havershire Blvd. across from The Heights,Ferguson township,False,False,Stop is outside the game border.,NV,16,10:07,17:37,30,40.788954,-77.895099
+sunday,2026-10-04,429,Havershire Blvd. at Northwick (Inbound),Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.790708,-77.898045
+sunday,2026-10-04,430,Havershire Blvd. at Northwick (Outbound),Ferguson township,False,False,Stop is outside the game border.,NV,16,10:08,17:38,30,40.790834,-77.898015
+sunday,2026-10-04,427,Havershire Blvd. at The Heights,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.788789,-77.894889
+sunday,2026-10-04,776,Martin St at Best Buy,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.8067577974,-77.8953058155
+sunday,2026-10-04,477,Martin St at Park Crest Lane Inbound,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.801872,-77.887276
+sunday,2026-10-04,481,Martin Street at Herman Drive,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.8044836032,-77.8913654038
+sunday,2026-10-04,518,Middle of Oakwood Ave Inbound,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.818726,-77.893219
+sunday,2026-10-04,501,Middle of Oakwood Ave Outbound,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.81886,-77.89325
+sunday,2026-10-04,522,N Atheron at Champs,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.807671,-77.892625
+sunday,2026-10-04,520,N Atherton Pl at Walmart,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.809042,-77.896356
+sunday,2026-10-04,420,N Atherton St at Arbor Way,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79812,-77.87484
+sunday,2026-10-04,499,N Atherton St at Chick-Fil-A,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.809163,-77.906342
+sunday,2026-10-04,500,N Atherton St at Colonnade Blvd,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.809495,-77.907497
+sunday,2026-10-04,524,N Atherton St at Denton Ave,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.806147,-77.888714
+sunday,2026-10-04,471,N Atherton St at Douglas Dr,Patton township,False,False,CATA reports North Atherton St at Douglas Dr closed for construction; use stop 473 at Fairwood Lane.; No scheduled boarding in this day's reference window.,,0,,,,40.810132,-77.914486
+sunday,2026-10-04,527,N Atherton St at E Clinton Ave,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.803445,-77.883648
+sunday,2026-10-04,473,N Atherton St at Fairwood Lane,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.809765,-77.91147
+sunday,2026-10-04,472,N Atherton St at Hawbaker Industrial Dr,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.81029,-77.913947
+sunday,2026-10-04,7,N Atherton St at Hillcrest Ave,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.798056,-77.874489
+sunday,2026-10-04,47,N Atherton St at Mitchell Ave Inbound,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.80027,-77.87804
+sunday,2026-10-04,525,N Atherton St at N Hills Place Inbound,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.805255,-77.88742
+sunday,2026-10-04,526,N Atherton St at N Hills Place Outbound,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.805164,-77.886925
+sunday,2026-10-04,474,N Atherton St near Fairfield Inn,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.809807,-77.910067
+sunday,2026-10-04,705,N Atherton St near Staples,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.807647,-77.893663
+sunday,2026-10-04,8,N. Atherton St at CVS,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.801405,-77.879826
+sunday,2026-10-04,320,Nittany Mall (Aldi),College township,False,False,Stop is outside the game border.,CC,16,10:00,17:30,30,40.8344077701,-77.8015204921
+sunday,2026-10-04,165,Nittany Mall Main Entrance,College township,False,False,Stop is outside the game border.,CC,32,10:00,17:54,24,40.83367,-77.80072
+sunday,2026-10-04,424,Northland Center Inbound,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.802559,-77.885834
+sunday,2026-10-04,423,Northland Center Outbound,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.802559,-77.885963
+sunday,2026-10-04,519,Oakwood Ave at Benjamin Ct,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.818935,-77.889603
+sunday,2026-10-04,778,Oakwood Ave at Clearview Ave,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.8163303897,-77.8910775517
+sunday,2026-10-04,517,Oakwood Ave at Texas Roadhouse,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.816196,-77.896767
+sunday,2026-10-04,714,Oakwood Ave at Vairo Village Comm Ctr,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.81745,-77.889
+sunday,2026-10-04,840,Old Gatesburg Rd at Blue Course Med. Ctr,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.781939,-77.887386
+sunday,2026-10-04,839,Opposite 225 Science Park Rd (ARL Bldg),Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77478,-77.892122
+sunday,2026-10-04,253,Opposite 240 Toftrees Ave,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.823074,-77.898646
+sunday,2026-10-04,256,Opposite 301 Toftrees Ave,Patton township,False,True,The full 400 m circle crosses the game border.,NV,16,10:00,17:30,30,40.82323,-77.89653
+sunday,2026-10-04,312,Opposite 3035 Enterprise Dr,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.765908,-77.881962
+sunday,2026-10-04,389,Opposite 383 Rolling Ridge Dr,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7867,-77.82655
+sunday,2026-10-04,724,Opposite 428 Windmere Dr,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78795,-77.82626
+sunday,2026-10-04,723,Opposite 474 Windmere Dr,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78803,-77.82317
+sunday,2026-10-04,390,Opposite 501 Rolling Ridge Dr,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78617,-77.82353
+sunday,2026-10-04,266,Opposite 711 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82972,-77.887
+sunday,2026-10-04,269,Opposite 910 Cricklewood Dr,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.83227,-77.88379
+sunday,2026-10-04,710,Opposite 972 Oakwood Ave,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.818066,-77.89621
+sunday,2026-10-04,494,Park Forest Ave Opposite Northbrook,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.807541,-77.903569
+sunday,2026-10-04,496,Park Forest Ave at N Atherton Inbound,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.808502,-77.902283
+sunday,2026-10-04,485,Park Lane at Aaron Dr,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.80125,-77.90033
+sunday,2026-10-04,487,Park Lane at Cornwall Rd Inbound,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.80256,-77.90159
+sunday,2026-10-04,491,Park Lane at Park Forest Ave Inbound,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.806595,-77.90534
+sunday,2026-10-04,489,Park Lane at Sierra Lane,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.804787,-77.904572
+sunday,2026-10-04,341,Pike St at Dale St Inbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81136,-77.8184
+sunday,2026-10-04,340,Pike St at Dale St Outbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81123,-77.818285
+sunday,2026-10-04,336,Pike St at Hickory Lane,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81504,-77.81889
+sunday,2026-10-04,334,Pike St at Limerock Terrace Inbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.817235,-77.818465
+sunday,2026-10-04,335,Pike St at Limerock Terrace Outbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81723,-77.818315
+sunday,2026-10-04,342,Pike St at Mary St Inbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.80983,-77.818755
+sunday,2026-10-04,343,Pike St at Mary St Outbound,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.809485,-77.81874
+sunday,2026-10-04,337,Pike St at Rishel Lane,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.81495,-77.8187
+sunday,2026-10-04,569,Porter Rd at Medlar Field,College township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.811206,-77.852586
+sunday,2026-10-04,400,Research Drive at CATA,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.762135,-77.875632
+sunday,2026-10-04,388,Rolling Ridge Dr at Hills Plaza South,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78571,-77.82915
+sunday,2026-10-04,386,Rolling Ridge Drive at Hills Plaza,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.786432,-77.829181
+sunday,2026-10-04,164,Ross/Harbor Freight,College township,False,False,Stop is outside the game border.,CC,16,10:10,17:40,30,40.8314294403,-77.8066180847
+sunday,2026-10-04,2003,S Allen St near Riviera Apts,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7858135788,-77.8488734524
+sunday,2026-10-04,401,S Atherton St at Centre Lane,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78499,-77.84956
+sunday,2026-10-04,157,S Atherton St at E Branch Rd,State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7853275061,-77.8350426822
+sunday,2026-10-04,380,S Atherton St at Norma Street,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78465,-77.84162
+sunday,2026-10-04,382,S Atherton St at Science St,State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.78522,-77.83857
+sunday,2026-10-04,397,S Atherton St at W Fairmount Ave Inbound,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.788115,-77.860035
+sunday,2026-10-04,381,S Atherton St at Whitehall Rd,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7847898765,-77.8417207424
+sunday,2026-10-04,395,S Atherton Street at Highland Alley,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.790469,-77.863144
+sunday,2026-10-04,368,S Pugh St at E Hamilton Ave Outbound,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79128,-77.85326
+sunday,2026-10-04,365,S Pugh St at E Nittany Ave,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79268,-77.85609
+sunday,2026-10-04,369,S Pugh St at Waring Ave,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79009,-77.85077
+sunday,2026-10-04,880,Sams Club,College township,False,False,Stop is outside the game border.,CC,16,10:09,17:39,30,40.833169,-77.805413
+sunday,2026-10-04,549,Science Park Rd at Pine Hall Rd,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77375,-77.88931
+sunday,2026-10-04,557,Science Park Rd at Sandy Dr (Wonderland),Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.784855,-77.902385
+sunday,2026-10-04,779,Science Park Rd at Sandy Dr near CVIM,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7849344347,-77.9022377197
+sunday,2026-10-04,550,Science Park Rd at Torron Group,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77381,-77.88997
+sunday,2026-10-04,813,Science Park Rd at the ARL Building,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.774961,-77.892075
+sunday,2026-10-04,1013,Science St. at the Ramada,State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7845635835,-77.8387070451
+sunday,2026-10-04,321,Shiloh Rd at Premier Dr,College township,False,False,Stop is outside the game border.,CC,16,10:02,17:32,30,40.8381401156,-77.8032334087
+sunday,2026-10-04,156,South Atherton at Creekside Plaza,State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.785124,-77.834581
+sunday,2026-10-04,414,Southgate Dr at Ashwicken Ct,State College borough,False,True,The full 400 m circle crosses the game border.,RP,14,10:23,17:58,35,40.773145,-77.862115
+sunday,2026-10-04,415,Southgate Dr at Blue Course Dr,State College borough,False,True,The full 400 m circle crosses the game border.,RP,14,10:23,17:58,35,40.77199,-77.86386
+sunday,2026-10-04,416,Stratford Dr at Blue Course Dr,State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77107,-77.86208
+sunday,2026-10-04,417,Stratford Dr at High Point Skatepark,State College borough,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.77267,-77.85977
+sunday,2026-10-04,418,Stratford Dr at Waupelani Dr,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.77425,-77.85708
+sunday,2026-10-04,867,The Yards at Old State,Ferguson township,False,True,The full 400 m circle crosses the game border.,RP,28,10:18,17:55,33,40.7677268597,-77.8590667116
+sunday,2026-10-04,1001,Thon Dr.,State College borough,False,True,The full 400 m circle crosses the game border.,RP,14,10:16,17:51,35,40.7711312655,-77.856812147
+sunday,2026-10-04,319,Toftrees Ave at Hillside and Fox Run,Patton township,False,True,The full 400 m circle crosses the game border.,NV,16,10:01,17:31,30,40.823697,-77.89174
+sunday,2026-10-04,9,Toftrees Ave at The Station,Patton township,False,False,Stop is outside the game border.,NV,16,10:02,17:32,30,40.824063329,-77.8865689067
+sunday,2026-10-04,251,Toftrees Ave at The View,Patton township,False,True,The full 400 m circle crosses the game border.,NV,16,10:06,17:36,30,40.8231888366,-77.8838663031
+sunday,2026-10-04,326,Toftrees Ave at Wildridge Apts.,Patton township,False,True,The full 400 m circle crosses the game border.,NV,16,10:01,17:31,30,40.823629,-77.889463
+sunday,2026-10-04,701,Toftrees Avenue near Alma Mater Drive,Patton township,False,True,The full 400 m circle crosses the game border.,NV,16,10:07,17:37,30,40.826011,-77.880228
+sunday,2026-10-04,700,Toftrees Avenue near Beaumanor Drive,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.825921,-77.880501
+sunday,2026-10-04,497,Trader Joes Plaza,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.809584,-77.902198
+sunday,2026-10-04,362,Trout Road at Centre County PAWS,College township,False,False,Stop is outside the game border.,CC,16,10:04,17:34,30,40.8361392415,-77.8104664085
+sunday,2026-10-04,118,Trout Road at Pleasant Pointe,College township,False,False,Stop is outside the game border.,CC,16,10:03,17:33,30,40.8380517745,-77.8074014319
+sunday,2026-10-04,112,University Dr at Bellaire Ave (Inbound),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79901,-77.84756
+sunday,2026-10-04,56,University Dr at Bellaire Ave (Outbound),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79896,-77.84765
+sunday,2026-10-04,111,University Dr at E. Waring Ave (SSA Offi,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79775,-77.84527
+sunday,2026-10-04,57,University Dr at E. Waring Ave(Outbound),State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79759,-77.84519
+sunday,2026-10-04,58,University Dr at Easterly Pkwy,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79657,-77.84311
+sunday,2026-10-04,726,University Drive at Jordan Center Gate A,College township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.807923,-77.856874
+sunday,2026-10-04,513,Vairo Blvd at The Bryn Inbound,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.80993,-77.89189
+sunday,2026-10-04,511,Vairo Blvd at The Pointe Inbound,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.810268,-77.890236
+sunday,2026-10-04,508,Vairo Blvd at Tremont Inbound lower,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.815521,-77.884628
+sunday,2026-10-04,509,Vairo Blvd at Tremont Inbound upper,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.81246,-77.88627
+sunday,2026-10-04,504,Vairo Blvd opposite Vairo Village(Upper),Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.81627,-77.88796
+sunday,2026-10-04,506,Vairo Blvd opposite Vairo Village(lower),Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.81588,-77.88646
+sunday,2026-10-04,435,Valley Vista Dr at SC Collective Farmstead,Ferguson township,False,False,The full 400 m circle crosses the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.790771,-77.90773
+sunday,2026-10-04,470,Valley Vista Drive at Lowes Center,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.810817,-77.923776
+sunday,2026-10-04,882,Villas at Happy Valley,College township,False,False,Stop is outside the game border.,CC,16,10:07,17:37,30,40.834051,-77.809978
+sunday,2026-10-04,307,W College Ave at Bristol Ave Inbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.76634,-77.884325
+sunday,2026-10-04,308,W College Ave at Bristol Ave Outbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.766435,-77.884675
+sunday,2026-10-04,291,W College Ave at Buckhout St (Haus),Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7869,-77.8714
+sunday,2026-10-04,305,W College Ave at Chelsea Lane Inbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.76809,-77.88609
+sunday,2026-10-04,306,W College Ave at Chelsea Lane Outbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.76831,-77.88657
+sunday,2026-10-04,304,W College Ave at Holly Circle Inbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.770745,-77.887405
+sunday,2026-10-04,538,W College Ave at Holly Circle Outbound,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.769975,-77.887415
+sunday,2026-10-04,293,W College Ave at Hoy St,Ferguson township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.78462,-77.87416
+sunday,2026-10-04,296,W College Ave near Centre Animal Hospita,Ferguson township,False,True,The full 400 m circle crosses the game border.,NV,16,10:03,17:33,30,40.78158,-77.87802
+sunday,2026-10-04,212,W Whitehall Road at CATA,Ferguson township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.761013,-77.87622
+sunday,2026-10-04,777,Waddle Rd at the Bryn,Patton township,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.8106895168,-77.8941471146
+sunday,2026-10-04,163,Walmart - Inbound,College township,False,False,Stop is outside the game border.,CC,16,10:09,17:39,30,40.8324222055,-77.8059515423
+sunday,2026-10-04,873,West Deck,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7915728027,-77.8721259711
+sunday,2026-10-04,6,West Park Ave at North Burrowes St,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.79845,-77.8711
+sunday,2026-10-04,2001,Westerly Pkwy at Plaza Dr,State College borough,False,False,No scheduled boarding in this day's reference window.,,0,,,,40.7828788715,-77.854111069
+sunday,2026-10-04,391,Windmere Dr at Wellington Dr,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.7874677239,-77.82171866
+sunday,2026-10-04,935,Windmere Drive at Scenery Court,College township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.787733,-77.821953
+sunday,2026-10-04,755,Woodledge Dr Inbound (To Campus),Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82757,-77.88127
+sunday,2026-10-04,756,Woodledge Dr Outbound (To Toftrees),Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.82764,-77.88104
+sunday,2026-10-04,832,Woodledge Dr at Woodledge Circle,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.831299,-77.882255
+sunday,2026-10-04,833,Woodledge Dr opposite Woodledge Circle,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.831383,-77.882178
+sunday,2026-10-04,844,Woodledge Dr opposite Woodledge Circle,Patton township,False,False,Stop is outside the game border.; No scheduled boarding in this day's reference window.,,0,,,,40.831383,-77.882178

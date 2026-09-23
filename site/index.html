@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172331">
+  <meta name="description" content="Local maps and rules for Jet Lag: Hide + Seek in Los Angeles and State College.">
+  <title>Jet Lag: Hide + Seek — Choose a location</title>
+  <link rel="icon" href="/la/favicon.svg" type="image/svg+xml">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #111c28; color: #f0f5fa; font: 17px/1.6 system-ui, sans-serif; }
+    main { max-width: 940px; margin: 0 auto; padding: clamp(36px, 8vw, 90px) 24px; }
+    .eyebrow { color: #9cb7d0; font-size: .8rem; letter-spacing: .15em; text-transform: uppercase; }
+    h1 { margin: 12px 0; font-size: clamp(2.5rem, 7vw, 4.5rem); line-height: 1.05; letter-spacing: -.045em; }
+    .intro { color: #c3d1dd; max-width: 580px; margin: 22px 0 38px; }
+    .locations { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+    .card { display: flex; flex-direction: column; padding: 28px; border: 1px solid #41576c; border-radius: 18px; background: #1c2c3c; color: inherit; text-decoration: none; }
+    .card:hover { background: #253c50; border-color: #a0caff; }
+    a:focus-visible { outline: 3px solid #a0caff; outline-offset: 5px; }
+    .card h2 { font-size: 1.6rem; margin: 6px 0 10px; }
+    .card p { margin: 0 0 26px; color: #c3d1dd; }
+    .tag { color: #abcff5; font-size: .85rem; }
+    .open { margin-top: auto; font-weight: 650; color: #b7daff; }
+    footer { margin-top: 36px; font-size: .9rem; color: #a6b8c8; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Jet Lag · The home game</div>
+    <h1>Hide + Seek</h1>
+    <p class="intro">Pick your city. Explore the game border, find a hiding zone, and get the local rules before you head out.</p>
+    <nav class="locations" aria-label="Choose a game location">
+      <a class="card" href="/state-college/">
+        <span class="tag">Pennsylvania · Town + campus</span>
+        <h2>State College</h2>
+        <p>CATA buses and walking, with separate Saturday and Sunday hiding centers.</p>
+        <span class="open">Open State College map →</span>
+      </a>
+      <a class="card" href="/la/">
+        <span class="tag">California · Metro Rail</span>
+        <h2>Los Angeles</h2>
+        <p>The original LA game: rail stations, neighborhood divisions, and 400 m hiding zones.</p>
+        <span class="open">Open Los Angeles map →</span>
+      </a>
+    </nav>
+    <footer>Use your official cards and rulebooks. Each map includes its local rules and game boundary.</footer>
+  </main>
+</body>
+</html>
